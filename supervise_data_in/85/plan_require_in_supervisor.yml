@@ -1,0 +1,359 @@
+-
+  dic_excute:
+    'plan_quar': 1
+    'require_compilation': 1
+    'intention_notice': 1
+    'require_survey': 1
+    'survey_detail': 1
+    'purchase_demonstration': 1
+    'demonstration_detail': 1
+    'require_project': 1
+    'require_notice': 1
+    'require_check': 1
+    'require_submit': 1
+  dic_plan_year:
+    'PROJECT_BUDGET': '1000000'
+    # 采购分类 1 物资类 2 服务类 3 工程类
+    'PROJECT_TYPE': '1'
+    # 项目通用性 1 专用 2 通用
+    'IS_COMMON': '2'
+    # 采购机构类型 1 采购服务站 2 队属采购机构 9 其他
+    'AGENT_TYPE': '2'
+  dic_plan_quar:
+    'PROJECT_BUDGET': '1000000'
+    'REQUIRE_SUBMIT_DAY': '1'
+    'PLAN_QUAR_PROJECT_NAME': 'qh物资VGLDMA0308-0942'
+#    'PURCHASE_AGENT_CODE': 'bddcdf54-4e7e-4b27-801c-c23d6b7e1c9e'
+#    'PURCHASE_AGENT_NAME': '广联达采购单位A'
+    'PLAN_QUARTER': 4
+    'PLAN_MONTH': 11
+    'PURCHASE_UNIT_CODE': '12bf17d0-77e2-4123-8991-0537f4f2e918'
+    'PURCHASE_UNIT_NAME': '广联达管理采购单位A'
+  dic_plan_approval:
+     -
+       # 1 年度计划 2 季度计划
+      'PLAN_TYPE': '1'
+      'TRADE_STEP': '采购单位需求部门审核'
+      # 操作人所在单位类型 1 采购单位需求部门 2 采购单位采购管理部门 3 大单位采管部门 9 其他
+      'COMMITTER_UNIT_CODE': '2c023539-7a08-44b0-bf56-643801a70b6a'
+      'COMMITTER_UNIT_TYPE': '1'
+      # 操作类型 1 发起 2 撤回 3 审核通过 4 审核不通过
+      'COMMIT_TYPE': '3'
+     -
+       # 1 年度计划 2 季度计划
+       'PLAN_TYPE': '2'
+       'TRADE_STEP': '大单位采管部门审核'
+       # 操作人所在单位类型 1 采购单位需求部门 2 采购单位采购管理部门 3 大单位采管部门 9 其他
+       'COMMITTER_UNIT_CODE': '2c023539-7a08-44b0-bf56-643801a70b6a'
+       'COMMITTER_UNIT_TYPE': '3'
+       # 操作类型 1 发起 2 撤回 3 审核通过 4 审核不通过
+       'COMMIT_TYPE': '3'
+
+  dic_require_compilation:
+    -
+      'PROGRAM_BUDGET': '1000000'
+#      'PURCHASE_AGENT_CODE': 'bddcdf54-4e7e-4b27-801c-c23d6b7e1c9e'
+#      'PURCHASE_AGENT_NAME': '广联达管理采购机构A'
+      'PURCHASE_UNIT_CODE': '2c023539-7a08-44b0-bf56-643801a70b6a'
+      'PURCHASE_UNIT_NAME': '广联达管理采购机构A'
+      'REQUIRE_PROJECT_NAME': '广联达管理采购机构A-地铁轴时间-0308-0943'
+      'SUBMIT_ORDER': 1
+#    - 'PROGRAM_BUDGET': '1000000'
+#      #    'PURCHASE_AGENT_CODE': '55c6a442-ee86-4e71-87ad-cc66f513c8d8'
+#      #    'PURCHASE_AGENT_NAME': '广联达采购机构B'
+#      'SUBMIT_ORDER': 2
+#    - 'PROGRAM_BUDGET': '1000000'
+#      #    'PURCHASE_AGENT_CODE': '55c6a442-ee86-4e71-87ad-cc66f513c8d8'
+#      #    'PURCHASE_AGENT_NAME': '广联达采购机构B'
+#      'SUBMIT_ORDER': 3
+  dic_intention_notice:
+    - 'PUBLIC_DAYS': '15'
+      #公开方式 1需要在互联网公开，或脱密后再互联网公开 2 不能在互联网公开，采取线下方式有限范围内公开 3 不需要采购意向公开，时间紧急无法意向公开，或已完成意向公开
+      'DISCLOSURE_METHOD': '1'
+  dic_require_survey:
+    - 'SUBMIT_ORDER': '1'
+      #本项目是否需要开展需求调查 1 是 0 否
+      'IS_DEMAND_SURVEY': '0'
+    - 'SUBMIT_ORDER': '1'
+      'IS_DEMAND_SURVEY': '1'
+    - 'SUBMIT_ORDER': '1'
+      'IS_DEMAND_SURVEY': '1'
+  dic_survey_detail:
+    - 'DATA_STATUS': '0'
+      'DEMAND_SURVEY_METHOD_CODE': '1'
+    - 'DATA_STATUS': '0'
+      'DEMAND_SURVEY_METHOD_CODE': '2'
+    - 'DATA_STATUS': '0'
+      'DEMAND_SURVEY_METHOD_CODE': '3'
+  dic_purchase_demonstration:
+    # 是否进行专项论证 1 是 0 否
+    - 'IS_DEMONSTRATION': '1'
+    - 'IS_DEMONSTRATION': '1'
+    - 'IS_DEMONSTRATION': '1'
+  dic_demonstration_detail:
+    -
+      - 'DEMONSTRATION_MEMBER_CODE': '1'
+        'EXPERT_NAME': '专家名称1'
+        'EXPERT_ID_CODE': '28383833838383'
+      - 'DEMONSTRATION_MEMBER_CODE': '2'
+        'EXPERT_NAME': '专家名称2'
+        'EXPERT_ID_CODE': '28383833838383'
+      - 'DEMONSTRATION_MEMBER_CODE': '1'
+        'EXPERT_NAME': '专家名称3'
+        'EXPERT_ID_CODE': '28383833838383'
+    -
+      - 'DEMONSTRATION_MEMBER_CODE': '2'
+        'EXPERT_NAME': '专家名称4'
+        'EXPERT_ID_CODE': '28383833838383'
+      - 'DEMONSTRATION_MEMBER_CODE': '1'
+        'EXPERT_NAME': '专家名称5'
+        'EXPERT_ID_CODE': '28383833838383'
+      - 'DEMONSTRATION_MEMBER_CODE': '2'
+        'EXPERT_NAME': '专家名称6'
+        'EXPERT_ID_CODE': '28383833838383'
+    -
+      - 'DEMONSTRATION_MEMBER_CODE': '1'
+        'EXPERT_NAME': '专家名称7'
+        'EXPERT_ID_CODE': '28383833838383'
+      - 'DEMONSTRATION_MEMBER_CODE': '2'
+        'EXPERT_NAME': '专家名称8'
+        'EXPERT_ID_CODE': '28383833838383'
+      - 'DEMONSTRATION_MEMBER_CODE': '1'
+        'EXPERT_NAME': '专家名称9'
+        'EXPERT_ID_CODE': '28383833838383'
+  dic_require_project:
+    - 'PURCHASE_MODE': '5'
+      'PURCHASE_UNIT_CODE': '2c023539-7a08-44b0-bf56-643801a70b6a'
+      #按专业领域 01 WXGH 02 BGSB 03 QXQC 04 QBQC 05 JZQC 06 JXQC 07 WHQC 08 BZ 09 YLQC 10 YL 11 JYQC 12 GCWZ 13 YCL 14
+      # YLSB 15 XGKY 99 其他
+      'OTHER_TYPES': '03'
+      # 按任务阶段 1 SSANWGHXM 2 SSIWGHXM 3 FGHXM 9 其他
+      'STAGE_TYPE': '2'
+      # 按完成要求 1 ZC 2 YJ 9 其他
+      'COMPLETION_TYPE': '2'
+  dic_require_section:
+    # 评标（审）方法 1 综合评审法 2 质量优先法 3 最低价法
+    - 'EVALUATION_METHOD': '1'
+      'REQUIRE_SECTION_NAME': '分包名称1'
+      # 是否需要提供样品 1 是 0 否
+      'SAMPLE_IF': '0'
+      # 包预算
+      'SECTION_BUDGET': 1000000
+    - 'EVALUATION_METHOD': '2'
+      'REQUIRE_SECTION_NAME': '分包名称2'
+      # 是否需要提供样品 1 是 0 否
+      'SAMPLE_IF': '0'
+      # 包预算
+      'SECTION_BUDGET': 1000000
+    - 'EVALUATION_METHOD': '3'
+      'REQUIRE_SECTION_NAME': '分包名称3'
+      # 是否需要提供样品 1 是 0 否
+      'SAMPLE_IF': '1'
+      # 包预算
+      'SECTION_BUDGET': 1000000
+  dic_section_detail:
+    -
+      - 'ORDER_NO': '1'
+        'OBJECT_NAME': '标的名称1'
+        'PURCHASE_ITEM_NAME':  'QH123'
+        'PURCHASE_ITEM_CODE': 'Q02'
+        # 是否专用产品 1 是 0 否
+        'IS_SPECIAL_PRODUCT': '0'
+        # 是否核心产品 1 是 0 否
+        'IS_CORE': '1'
+        # 是否提供样品 1 是 0 否
+        'IS_PROVIDE_SAMPLE': '0'
+      - 'ORDER_NO': '2'
+        'OBJECT_NAME': '标的名称2'
+        'PURCHASE_ITEM_NAME': 'QH123'
+        'PURCHASE_ITEM_CODE': 'Q01'
+        # 是否专用产品 1 是 0 否
+        'IS_SPECIAL_PRODUCT': '0'
+        # 是否核心产品 1 是 0 否
+        'IS_CORE': '0'
+        # 是否提供样品 1 是 0 否
+        'IS_PROVIDE_SAMPLE': '0'
+      - 'ORDER_NO': '3'
+        'OBJECT_NAME': '标的名称3'
+        'PURCHASE_ITEM_NAME':  '采购品目名称3'
+        # 是否专用产品 1 是 0 否
+        'IS_SPECIAL_PRODUCT': '0'
+        # 是否核心产品 1 是 0 否
+        'IS_CORE': '0'
+        # 是否提供样品 1 是 0 否
+        'IS_PROVIDE_SAMPLE': '0'
+    -
+      - 'ORDER_NO': '1'
+        'OBJECT_NAME': '标的名称1'
+        'PURCHASE_ITEM_NAME': '采购品目名称1'
+        # 是否专用产品 1 是 0 否
+        'IS_SPECIAL_PRODUCT': '0'
+        # 是否核心产品 1 是 0 否
+        'IS_CORE': '1'
+        # 是否提供样品 1 是 0 否
+        'IS_PROVIDE_SAMPLE': '0'
+      - 'ORDER_NO': '2'
+        'OBJECT_NAME': '标的名称2'
+        'PURCHASE_ITEM_NAME': '采购品目名称2'
+        # 是否专用产品 1 是 0 否
+        'IS_SPECIAL_PRODUCT': '0'
+        # 是否核心产品 1 是 0 否
+        'IS_CORE': '0'
+        # 是否提供样品 1 是 0 否
+        'IS_PROVIDE_SAMPLE': '0'
+      - 'ORDER_NO': '3'
+        'OBJECT_NAME': '标的名称3'
+        'PURCHASE_ITEM_NAME': '采购品目名称3'
+        # 是否专用产品 1 是 0 否
+        'IS_SPECIAL_PRODUCT': '0'
+        # 是否核心产品 1 是 0 否
+        'IS_CORE': '0'
+        # 是否提供样品 1 是 0 否
+        'IS_PROVIDE_SAMPLE': '0'
+    -
+      - 'ORDER_NO': '1'
+        'OBJECT_NAME': '标的名称1'
+        'PURCHASE_ITEM_NAME': '采购品目名称1'
+        # 总价（元）
+        'TOTAL_PRICE': 400000
+        # 是否专用产品 1 是 0 否
+        'IS_SPECIAL_PRODUCT': '0'
+        # 是否核心产品 1 是 0 否
+        'IS_CORE': '1'
+        # 是否提供样品 1 是 0 否
+        'IS_PROVIDE_SAMPLE': '0'
+      - 'ORDER_NO': '2'
+        'OBJECT_NAME': '标的名称2'
+        'PURCHASE_ITEM_NAME': 'QH123'
+        'PURCHASE_ITEM_CODE': 'Q01'
+        #单价
+        'SINGLE_PRICE': 12100
+        # 数量
+        'PURCHASE_NUM': 33
+        # 总价（元）
+        'TOTAL_PRICE': 400000
+        # 是否专用产品 1 是 0 否
+        'IS_SPECIAL_PRODUCT': '0'
+        # 是否核心产品 1 是 0 否
+        'IS_CORE': '0'
+        # 是否提供样品 1 是 0 否
+        'IS_PROVIDE_SAMPLE': '0'
+      - 'ORDER_NO': '3'
+        'OBJECT_NAME': '标的名称3'
+        'PURCHASE_ITEM_NAME': 'QH123'
+        'PURCHASE_ITEM_CODE': 'Q01'
+        #单价
+        'SINGLE_PRICE': 12100
+        # 数量
+        'PURCHASE_NUM': 16
+        # 总价（元）
+        'TOTAL_PRICE': 200000
+        # 是否专用产品 1 是 0 否
+        'IS_SPECIAL_PRODUCT': '0'
+        # 是否核心产品 1 是 0 否
+        'IS_CORE': '0'
+        # 是否提供样品 1 是 0 否
+        'IS_PROVIDE_SAMPLE': '0'
+  dic_require_notice:
+    - # 是否组织 1 是 0 否
+      'IS_ORGANIZATION': '1'
+      # 公示类型编码 1 采购需求公示 2 单一来源公示
+      'PUBLIC_TYPE_CODE': '1'
+    -
+      'IS_ORGANIZATION': '0'
+
+      'PUBLIC_TYPE_CODE': '2'
+    -
+      'IS_ORGANIZATION': '1'
+
+      'PUBLIC_TYPE_CODE': '1'
+    -
+      'IS_ORGANIZATION': '1'
+
+      'PUBLIC_TYPE_CODE': '1'
+  dic_require_check:
+    - # 审查类型 1 需求审查 2 保密审查
+      'EXAMINATION_TYPE': '2'
+      # 审查方式 1 内部审查 2 邀请专家 3 邀请第三方机构 9 其他
+      'EXAMINATION_WAY_CODE': '2'
+      # 建议公开范围 1 公开 2 脱密脱敏公开 3 有限范围公开 4 禁止公开
+      'PUBLIC_SCOPE': '1'
+      # 建议采购方式 1 公开招标 2 邀请招标 3 竞争性谈判 4 询价 5 单一来源采购 9 其他
+      'PURCHASE_MODE': '2'
+    - # 审查类型 1 需求审查 2 保密审查
+      'EXAMINATION_TYPE': '1'
+      # 审查方式 1 内部审查 2 邀请专家 3 邀请第三方机构 9 其他
+      'EXAMINATION_WAY_CODE': '1'
+      # 建议公开范围 1 公开 2 脱密脱敏公开 3 有限范围公开 4 禁止公开
+      'PUBLIC_SCOPE': '2'
+      # 建议采购方式 1 公开招标 2 邀请招标 3 竞争性谈判 4 询价 5 单一来源采购 9 其他
+      'PURCHASE_MODE': '1'
+    - # 审查类型 1 需求审查 2 保密审查
+      'EXAMINATION_TYPE': '2'
+      # 审查方式 1 内部审查 2 邀请专家 3 邀请第三方机构 9 其他
+      'EXAMINATION_WAY_CODE': '3'
+      # 建议公开范围 1 公开 2 脱密脱敏公开 3 有限范围公开 4 禁止公开
+      'PUBLIC_SCOPE': '3'
+      # 建议采购方式 1 公开招标 2 邀请招标 3 竞争性谈判 4 询价 5 单一来源采购 9 其他
+      'PURCHASE_MODE': '4'
+  dic_require_submit:
+    - # 状态 0 需求提报 1 需求接收 2 初核退回 3 初核通过 4 复核提报 5复核被退回 6 复核通过
+      'STATUS': '0'
+      'CREATE_TIME': -10
+      'SUBMIT_ORDER': 1
+      # 需求复核方式 1 内部评估 2 专家论证 3 采购平台公开征求意见 9 其他方式
+      'REVIEW_TYPE': '2'
+    - # 状态 0 需求提报 1 需求接收 2 初核退回 3 初核通过 4 复核提报 5复核被退回 6 复核通过
+      'STATUS': '1'
+      'CREATE_TIME': -9
+      'SUBMIT_ORDER': 1
+      # 需求复核方式 1 内部评估 2 专家论证 3 采购平台公开征求意见 9 其他方式
+      'REVIEW_TYPE': '2'
+    - # 状态 0 需求提报 1 需求接收 2 初核退回 3 初核通过 4 复核提报 5复核被退回 6 复核通过
+      'STATUS': '4'
+      'CREATE_TIME': -8
+      'SUBMIT_ORDER': 2
+      # 需求复核方式 1 内部评估 2 专家论证 3 采购平台公开征求意见 9 其他方式
+      'REVIEW_TYPE': '2'
+#    - # 状态 0 需求提报 1 需求接收 2 初核退回 3 初核通过 4 复核提报 5复核被退回 6 复核通过
+#      'STATUS': '1'
+#      'CREATE_TIME': -8
+#      'SUBMIT_ORDER': 2
+#      # 需求复核方式 1 内部评估 2 专家论证 3 采购平台公开征求意见 9 其他方式
+#      'REVIEW_TYPE': '2'
+#    - # 状态 0 需求提报 1 需求接收 2 初核退回 3 初核通过 4 复核提报 5复核被退回 6 复核通过
+#      'STATUS': '0'
+#      'CREATE_TIME': -6
+#      'SUBMIT_ORDER': 3
+#      # 需求复核方式 1 内部评估 2 专家论证 3 采购平台公开征求意见 9 其他方式
+#      'REVIEW_TYPE': '2'
+#    - # 状态 0 需求提报 1 需求接收 2 初核退回 3 初核通过 4 复核提报 5复核被退回 6 复核通过
+#      'STATUS': '1'
+#      'CREATE_TIME': -6
+#      'SUBMIT_ORDER': 3
+#      # 需求复核方式 1 内部评估 2 专家论证 3 采购平台公开征求意见 9 其他方式
+#      'REVIEW_TYPE': '2'
+#    - # 状态 0 需求提报 1 需求接收 2 初核退回 3 初核通过 4 复核提报 5复核被退回 6 复核通过
+#      'STATUS': '0'
+#      'CREATE_TIME': -26
+#      'SUBMIT_ORDER': 2
+#      # 需求复核方式 1 内部评估 2 专家论证 3 采购平台公开征求意见 9 其他方式
+#      'REVIEW_TYPE': '2'
+#    - # 状态 0 需求提报 1 需求接收 2 初核退回 3 初核通过 4 复核提报 5复核被退回 6 复核通过
+#      'STATUS': '1'
+#      'CREATE_TIME': -26
+#      'SUBMIT_ORDER': 2
+#      # 需求复核方式 1 内部评估 2 专家论证 3 采购平台公开征求意见 9 其他方式
+#      'REVIEW_TYPE': '2'
+#    - # 状态 0 需求提报 1 需求接收 2 初核退回 3 初核通过 4 复核提报 5复核被退回 6 复核通过
+#      'STATUS': '0'
+#      'CREATE_TIME': -24
+#      'SUBMIT_ORDER': 3
+#      # 需求复核方式 1 内部评估 2 专家论证 3 采购平台公开征求意见 9 其他方式
+#      'REVIEW_TYPE': '2'
+#    - # 状态 0 需求提报 1 需求接收 2 初核退回 3 初核通过 4 复核提报 5复核被退回 6 复核通过
+#      'STATUS': '1'
+#      'CREATE_TIME': -24
+#      'SUBMIT_ORDER': 3
+#      # 需求复核方式 1 内部评估 2 专家论证 3 采购平台公开征求意见 9 其他方式
+#      'REVIEW_TYPE': '2'

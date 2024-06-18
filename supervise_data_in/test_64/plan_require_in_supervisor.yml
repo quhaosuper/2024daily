@@ -1,0 +1,1016 @@
+# 多轮次复核不通过
+-
+  dic_excute:
+    'plan_quar': 1
+    'require_compilation': 1
+    'intention_notice': 1
+    'require_survey': 1
+    'survey_detail': 1
+    'purchase_demonstration': 1
+    'demonstration_detail': 1
+    'require_project': 1
+    'require_notice': 1
+    'require_check': 1
+    'require_submit': 1
+  dic_plan_year:
+    'PROJECT_BUDGET': '1000000'
+    # 采购分类 1 物资类 2 服务类 3 工程类
+    'PROJECT_TYPE': '1'
+    # 项目通用性 1 专用 2 通用
+    'IS_COMMON': '2'
+    # 采购机构类型 1 采购服务站 2 队属采购机构 9 其他
+    'AGENT_TYPE': '2'
+  dic_plan_quar:
+    'PROJECT_BUDGET': '1000000'
+    'REQUIRE_SUBMIT_DAY': '1'
+#    'PLAN_QUAR_PROJECT_NAME': 'qh物资0516-1900'
+    'PURCHASE_AGENT_CODE': 'b2bd80e1-00a5-4575-a17b-33cd8bf43221'
+    'PURCHASE_AGENT_NAME': '205集团君北京市丰台区君供联勤站'
+    'PLAN_QUARTER': 4
+    'PLAN_MONTH': 11
+#    'PURCHASE_UNIT_CODE': 'b2bd80e1-00a5-4575-a17b-33cd8bf43221'
+#    'PURCHASE_UNIT_NAME': '205集团君北京市丰台区君供联勤站'
+  dic_plan_approval:
+     -
+       # 1 年度计划 2 季度计划
+      'PLAN_TYPE': '1'
+      'TRADE_STEP': '采购单位需求部门审核'
+      # 操作人所在单位类型 1 采购单位需求部门 2 采购单位采购管理部门 3 大单位采管部门 9 其他
+      'COMMITTER_UNIT_CODE': '2c023539-7a08-44b0-bf56-643801a70b6a'
+      'COMMITTER_UNIT_TYPE': '1'
+      # 操作类型 1 发起 2 撤回 3 审核通过 4 审核不通过
+      'COMMIT_TYPE': '3'
+     -
+       # 1 年度计划 2 季度计划
+       'PLAN_TYPE': '2'
+       'TRADE_STEP': '大单位采管部门审核'
+       # 操作人所在单位类型 1 采购单位需求部门 2 采购单位采购管理部门 3 大单位采管部门 9 其他
+       'COMMITTER_UNIT_CODE': '2c023539-7a08-44b0-bf56-643801a70b6a'
+       'COMMITTER_UNIT_TYPE': '3'
+       # 操作类型 1 发起 2 撤回 3 审核通过 4 审核不通过
+       'COMMIT_TYPE': '3'
+
+  dic_con_plan_approval:
+    # 计划类型 - 1 年度采购计划, 2 季度明细计划
+    'PLAN_TYPE': '1'
+    # 计划专业
+    'PLAN_SPECIALTY': '计划专业1'
+    # 计划年度
+    'PLAN_YEAR': '计划年度1'
+    # 计划总经费
+    'PLAN_TOTAL_EXPENDITURE': 100000
+  dic_con_plan_approval_dt:
+    # 计量单位
+    'UNIT': '计量单位1'
+    # 数量
+    'QUANTITY': 100
+    # 单价（元）
+    'UNIT_PRICE': 10000
+    # 建设经费（元）
+    'CONSTRUCTION_EXPENDITURE': 1000000
+
+  dic_require_compilation:
+    -
+      'PROGRAM_BUDGET': '1000000'
+      'REQUIRE_PROJECT_NAME': '一轮复核通过-0615-19658'
+      'SUBMIT_ORDER': 1
+    - 'PROGRAM_BUDGET': '1200000'
+      'REQUIRE_PROJECT_NAME': '一轮复核通过-0615-19658'
+      #    'PURCHASE_AGENT_CODE': '55c6a442-ee86-4e71-87ad-cc66f513c8d8'
+      #    'PURCHASE_AGENT_NAME': '广联达采购机构B'
+      'SUBMIT_ORDER': 2
+#    - 'PROGRAM_BUDGET': '1000000'
+#      #    'PURCHASE_AGENT_CODE': '55c6a442-ee86-4e71-87ad-cc66f513c8d8'
+#      #    'PURCHASE_AGENT_NAME': '广联达采购机构B'
+#      'SUBMIT_ORDER': 3
+  dic_intention_notice:
+    - 'PUBLIC_DAYS': '15'
+      #公开方式 1需要在互联网公开，或脱密后再互联网公开 2 不能在互联网公开，采取线下方式有限范围内公开 3 不需要采购意向公开，时间紧急无法意向公开，或已完成意向公开
+      'DISCLOSURE_METHOD': '1'
+      'SUBMIT_ORDER': 1
+    - 'PUBLIC_DAYS': '18'
+      #公开方式 1需要在互联网公开，或脱密后再互联网公开 2 不能在互联网公开，采取线下方式有限范围内公开 3 不需要采购意向公开，时间紧急无法意向公开，或已完成意向公开
+      'DISCLOSURE_METHOD': '1'
+      'SUBMIT_ORDER': 2
+  dic_intention_detail:
+    -
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 1
+        # 明细顺序
+        'ORDER_NO': 1
+        # 项目品种名称
+        'PRODUCT_NAME': '项目品种名称1'
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 1
+        # 明细顺序
+        'ORDER_NO': 2
+        # 项目品种名称
+        'PRODUCT_NAME': '项目品种名称2'
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 1
+        # 明细顺序
+        'ORDER_NO': 3
+        # 项目品种名称
+        'PRODUCT_NAME': '项目品种名称3'
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 1
+        # 明细顺序
+        'ORDER_NO': 4
+        # 项目品种名称
+        'PRODUCT_NAME': '项目品种名称4'
+    -
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 2
+        # 明细顺序
+        'ORDER_NO': 1
+        # 项目品种名称
+        'PRODUCT_NAME': '项目品种名称1'
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 2
+        # 明细顺序
+        'ORDER_NO': 2
+        # 项目品种名称
+        'PRODUCT_NAME': '项目品种名称2'
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 2
+        # 明细顺序
+        'ORDER_NO': 3
+        # 项目品种名称
+        'PRODUCT_NAME': '项目品种名称3'
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 2
+        # 明细顺序
+        'ORDER_NO': 4
+        # 项目品种名称
+        'PRODUCT_NAME': '项目品种名称4'
+  dic_intention_advice:
+    - # 对应需求对接轮次
+      'SUBMIT_ORDER': 1
+      # 参与供应商名称
+      'SUPPLIER_NAME': '供应商名称1'
+      # 参与供应商代码
+      'SUPPLIER_CODE': '供应商代码1'
+    - # 对应需求对接轮次
+      'SUBMIT_ORDER': 2
+      # 参与供应商名称
+      'SUPPLIER_NAME': '供应商名称2'
+      # 参与供应商代码
+      'SUPPLIER_CODE': '供应商代码2'
+
+
+  dic_require_survey:
+    - 'SUBMIT_ORDER': 1
+      #本项目是否需要开展需求调查 1 是 0 否
+      'IS_DEMAND_SURVEY': '0'
+    - 'SUBMIT_ORDER': 2
+      'IS_DEMAND_SURVEY': '1'
+  dic_survey_detail:
+    - 'DATA_STATUS': '0'
+      'DEMAND_SURVEY_METHOD_CODE': '1'
+      'SUBMIT_ORDER': 1
+    - 'DATA_STATUS': '0'
+      'DEMAND_SURVEY_METHOD_CODE': '2'
+      'SUBMIT_ORDER': 2
+  dic_purchase_demonstration:
+    # 是否进行专项论证 1 是 0 否
+    - 'IS_DEMONSTRATION': '1'
+      'SUBMIT_ORDER': 1
+    - 'IS_DEMONSTRATION': '1'
+      'SUBMIT_ORDER': 2
+  dic_demonstration_detail:
+    -
+      - 'DEMONSTRATION_MEMBER_CODE': '1'
+        'SUBMIT_ORDER': 1
+        'EXPERT_NAME': '专家名称11'
+        'EXPERT_ID_CODE': '28383833838311'
+      - 'DEMONSTRATION_MEMBER_CODE': '1'
+        'SUBMIT_ORDER': 1
+        'EXPERT_NAME': '专家名称12'
+        'EXPERT_ID_CODE': '28383833838312'
+      - 'DEMONSTRATION_MEMBER_CODE': '1'
+        'SUBMIT_ORDER': 1
+        'EXPERT_NAME': '专家名称13'
+        'EXPERT_ID_CODE': '28383833838313'
+      - 'DEMONSTRATION_MEMBER_CODE': '2'
+        'SUBMIT_ORDER': 1
+        'SUPPLIER_NAME': '供应商名称11'
+        'SUPPLIER_CODE': '供应商CODE11'
+      - 'DEMONSTRATION_MEMBER_CODE': '2'
+        'SUBMIT_ORDER': 1
+        'SUPPLIER_NAME': '供应商名称12'
+        'SUPPLIER_CODE': '供应商CODE12'
+      - 'DEMONSTRATION_MEMBER_CODE': '2'
+        'SUBMIT_ORDER': 1
+        'SUPPLIER_NAME': '供应商名称13'
+        'SUPPLIER_CODE': '供应商CODE13'
+    -
+      - 'DEMONSTRATION_MEMBER_CODE': '1'
+        'SUBMIT_ORDER': 2
+        'EXPERT_NAME': '专家名称21'
+        'EXPERT_ID_CODE': '28383833838321'
+      - 'DEMONSTRATION_MEMBER_CODE': '1'
+        'SUBMIT_ORDER': 2
+        'EXPERT_NAME': '专家名称22'
+        'EXPERT_ID_CODE': '28383833838322'
+      - 'DEMONSTRATION_MEMBER_CODE': '1'
+        'SUBMIT_ORDER': 2
+        'EXPERT_NAME': '专家名称23'
+        'EXPERT_ID_CODE': '28383833838323'
+      - 'DEMONSTRATION_MEMBER_CODE': '2'
+        'SUBMIT_ORDER': 2
+        'SUPPLIER_NAME': '供应商名称21'
+        'SUPPLIER_CODE': '供应商CODE21'
+      - 'DEMONSTRATION_MEMBER_CODE': '2'
+        'SUBMIT_ORDER': 2
+        'SUPPLIER_NAME': '供应商名称22'
+        'SUPPLIER_CODE': '供应商CODE22'
+      - 'DEMONSTRATION_MEMBER_CODE': '2'
+        'SUBMIT_ORDER': 2
+        'SUPPLIER_NAME': '供应商名称23'
+        'SUPPLIER_CODE': '供应商CODE23'
+
+  dic_require_project:
+    - 'PURCHASE_MODE': '5'
+      'PURCHASE_UNIT_CODE': '2c023539-7a08-44b0-bf56-643801a70b6a'
+      #按专业领域 01 WXGH 02 BGSB 03 QXQC 04 QBQC 05 JZQC 06 JXQC 07 WHQC 08 BZ 09 YLQC 10 YL 11 JYQC 12 GCWZ 13 YCL 14
+      # YLSB 15 XGKY 99 其他
+      'OTHER_TYPES': '03'
+      # 按任务阶段 1 SSANWGHXM 2 SSIWGHXM 3 FGHXM 9 其他
+      'STAGE_TYPE': '2'
+      # 按完成要求 1 ZC 2 YJ 9 其他
+      'COMPLETION_TYPE': '2'
+      'SUBMIT_ORDER': 1
+    - 'PURCHASE_MODE': '5'
+      'PURCHASE_UNIT_CODE': '2c023539-7a08-44b0-bf56-643801a70b6a'
+      #按专业领域 01 WXGH 02 BGSB 03 QXQC 04 QBQC 05 JZQC 06 JXQC 07 WHQC 08 BZ 09 YLQC 10 YL 11 JYQC 12 GCWZ 13 YCL 14
+      # YLSB 15 XGKY 99 其他
+      'OTHER_TYPES': '03'
+      # 按任务阶段 1 SSANWGHXM 2 SSIWGHXM 3 FGHXM 9 其他
+      'STAGE_TYPE': '2'
+      # 按完成要求 1 ZC 2 YJ 9 其他
+      'COMPLETION_TYPE': '2'
+      'SUBMIT_ORDER': 2
+  dic_require_section:
+    # 评标（审）方法 1 综合评审法 2 质量优先法 3 最低价法
+    - 'EVALUATION_METHOD': '1'
+      'REQUIRE_SECTION_NAME': '分包名称1'
+      # 是否需要提供样品 1 是 0 否
+      'SAMPLE_IF': '0'
+      # 包预算
+      'SECTION_BUDGET': 1000000
+      'SUBMIT_ORDER': 2
+    - 'EVALUATION_METHOD': '2'
+      'REQUIRE_SECTION_NAME': '分包名称2'
+      # 是否需要提供样品 1 是 0 否
+      'SAMPLE_IF': '0'
+      # 包预算
+      'SECTION_BUDGET': 1000000
+      'SUBMIT_ORDER': 2
+    - 'EVALUATION_METHOD': '3'
+      'REQUIRE_SECTION_NAME': '分包名称3'
+      # 是否需要提供样品 1 是 0 否
+      'SAMPLE_IF': '1'
+      # 包预算
+      'SECTION_BUDGET': 1000000
+      'SUBMIT_ORDER': 2
+  dic_section_detail:
+    -
+      - 'ORDER_NO': '1'
+        'OBJECT_NAME': '标的名称1'
+        'PURCHASE_ITEM_NAME':  'QH123'
+        'PURCHASE_ITEM_CODE': 'Q02'
+        # 1 物资类 2 服务类 3 工程类
+        'SECTION_DETAIL_TYPE': '2'
+        # 是否专用产品 1 是 0 否
+        'IS_SPECIAL_PRODUCT': '0'
+        # 是否核心产品 1 是 0 否
+        'IS_CORE': '1'
+        # 是否提供样品 1 是 0 否
+        'IS_PROVIDE_SAMPLE': '0'
+        'SUBMIT_ORDER': 2
+      - 'ORDER_NO': '2'
+        'OBJECT_NAME': '标的名称2'
+        'PURCHASE_ITEM_NAME': 'QH123'
+        'PURCHASE_ITEM_CODE': 'Q01'
+        # 1 物资类 2 服务类 3 工程类
+        'SECTION_DETAIL_TYPE': '3'
+        # 是否专用产品 1 是 0 否
+        'IS_SPECIAL_PRODUCT': '0'
+        # 是否核心产品 1 是 0 否
+        'IS_CORE': '0'
+        # 是否提供样品 1 是 0 否
+        'IS_PROVIDE_SAMPLE': '0'
+        'SUBMIT_ORDER': 2
+      - 'ORDER_NO': '3'
+        'OBJECT_NAME': '标的名称3'
+        'PURCHASE_ITEM_NAME':  '采购品目名称3'
+        # 1 物资类 2 服务类 3 工程类
+        'SECTION_DETAIL_TYPE': '1'
+        # 是否专用产品 1 是 0 否
+        'IS_SPECIAL_PRODUCT': '0'
+        # 是否核心产品 1 是 0 否
+        'IS_CORE': '0'
+        # 是否提供样品 1 是 0 否
+        'IS_PROVIDE_SAMPLE': '0'
+        'SUBMIT_ORDER': 2
+    -
+      - 'ORDER_NO': '1'
+        'OBJECT_NAME': '标的名称1'
+        'PURCHASE_ITEM_NAME': '采购品目名称1'
+        # 1 物资类 2 服务类 3 工程类
+        'SECTION_DETAIL_TYPE': '1'
+        # 是否专用产品 1 是 0 否
+        'IS_SPECIAL_PRODUCT': '0'
+        # 是否核心产品 1 是 0 否
+        'IS_CORE': '1'
+        # 是否提供样品 1 是 0 否
+        'IS_PROVIDE_SAMPLE': '0'
+        'SUBMIT_ORDER': 2
+      - 'ORDER_NO': '2'
+        'OBJECT_NAME': '标的名称2'
+        'PURCHASE_ITEM_NAME': '采购品目名称2'
+        # 1 物资类 2 服务类 3 工程类
+        'SECTION_DETAIL_TYPE': '2'
+        # 是否专用产品 1 是 0 否
+        'IS_SPECIAL_PRODUCT': '0'
+        # 是否核心产品 1 是 0 否
+        'IS_CORE': '0'
+        # 是否提供样品 1 是 0 否
+        'IS_PROVIDE_SAMPLE': '0'
+        'SUBMIT_ORDER': 2
+      - 'ORDER_NO': '3'
+        'OBJECT_NAME': '标的名称3'
+        'PURCHASE_ITEM_NAME': '采购品目名称3'
+        # 1 物资类 2 服务类 3 工程类
+        'SECTION_DETAIL_TYPE': '3'
+        # 是否专用产品 1 是 0 否
+        'IS_SPECIAL_PRODUCT': '0'
+        # 是否核心产品 1 是 0 否
+        'IS_CORE': '0'
+        # 是否提供样品 1 是 0 否
+        'IS_PROVIDE_SAMPLE': '0'
+        'SUBMIT_ORDER': 2
+    -
+      - 'ORDER_NO': '1'
+        'OBJECT_NAME': '标的名称1'
+        'PURCHASE_ITEM_NAME': '采购品目名称1'
+        # 1 物资类 2 服务类 3 工程类
+        'SECTION_DETAIL_TYPE': '1'
+        # 总价（元）
+        'TOTAL_PRICE': 400000
+        # 是否专用产品 1 是 0 否
+        'IS_SPECIAL_PRODUCT': '0'
+        # 是否核心产品 1 是 0 否
+        'IS_CORE': '1'
+        # 是否提供样品 1 是 0 否
+        'IS_PROVIDE_SAMPLE': '0'
+        'SUBMIT_ORDER': 2
+      - 'ORDER_NO': '2'
+        'OBJECT_NAME': '标的名称2'
+        'PURCHASE_ITEM_NAME': 'QH123'
+        'PURCHASE_ITEM_CODE': 'Q01'
+        # 1 物资类 2 服务类 3 工程类
+        'SECTION_DETAIL_TYPE': '2'
+        #单价
+        'SINGLE_PRICE': 12100
+        # 数量
+        'PURCHASE_NUM': 33
+        # 总价（元）
+        'TOTAL_PRICE': 400000
+        # 是否专用产品 1 是 0 否
+        'IS_SPECIAL_PRODUCT': '0'
+        # 是否核心产品 1 是 0 否
+        'IS_CORE': '0'
+        # 是否提供样品 1 是 0 否
+        'IS_PROVIDE_SAMPLE': '0'
+        'SUBMIT_ORDER': 2
+      - 'ORDER_NO': '3'
+        'OBJECT_NAME': '标的名称3'
+        'PURCHASE_ITEM_NAME': 'QH123'
+        'PURCHASE_ITEM_CODE': 'Q01'
+        # 1 物资类 2 服务类 3 工程类
+        'SECTION_DETAIL_TYPE': '3'
+        #单价
+        'SINGLE_PRICE': 12100
+        # 数量
+        'PURCHASE_NUM': 16
+        # 总价（元）
+        'TOTAL_PRICE': 200000
+        # 是否专用产品 1 是 0 否
+        'IS_SPECIAL_PRODUCT': '0'
+        # 是否核心产品 1 是 0 否
+        'IS_CORE': '0'
+        # 是否提供样品 1 是 0 否
+        'IS_PROVIDE_SAMPLE': '0'
+        'SUBMIT_ORDER': 2
+
+  dic_tech_parameter:
+    -
+      -
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称1'
+          # 参数值
+          'PARAMETER_VALUE': '参数值1'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '1'
+          'SUBMIT_ORDER': 2
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称2'
+          # 参数值
+          'PARAMETER_VALUE': '参数值2'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '2'
+          'SUBMIT_ORDER': 2
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称3'
+          # 参数值
+          'PARAMETER_VALUE': '参数值3'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '3'
+          'SUBMIT_ORDER': 2
+      -
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称1'
+          # 参数值
+          'PARAMETER_VALUE': '参数值1'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '1'
+          'SUBMIT_ORDER': 2
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称2'
+          # 参数值
+          'PARAMETER_VALUE': '参数值2'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '2'
+          'SUBMIT_ORDER': 2
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称3'
+          # 参数值
+          'PARAMETER_VALUE': '参数值3'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '3'
+          'SUBMIT_ORDER': 2
+      -
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称1'
+          # 参数值
+          'PARAMETER_VALUE': '参数值1'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '1'
+          'SUBMIT_ORDER': 2
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称2'
+          # 参数值
+          'PARAMETER_VALUE': '参数值2'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '2'
+          'SUBMIT_ORDER': 2
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称3'
+          # 参数值
+          'PARAMETER_VALUE': '参数值3'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '3'
+          'SUBMIT_ORDER': 2
+    -
+      -
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称1'
+          # 参数值
+          'PARAMETER_VALUE': '参数值1'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '1'
+          'SUBMIT_ORDER': 2
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称2'
+          # 参数值
+          'PARAMETER_VALUE': '参数值2'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '2'
+          'SUBMIT_ORDER': 2
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称3'
+          # 参数值
+          'PARAMETER_VALUE': '参数值3'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '3'
+          'SUBMIT_ORDER': 2
+      - - # 参数名称
+          'PARAMETER_NAME': '参数名称1'
+          # 参数值
+          'PARAMETER_VALUE': '参数值1'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '1'
+          'SUBMIT_ORDER': 2
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称2'
+          # 参数值
+          'PARAMETER_VALUE': '参数值2'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '2'
+          'SUBMIT_ORDER': 2
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称3'
+          # 参数值
+          'PARAMETER_VALUE': '参数值3'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '3'
+          'SUBMIT_ORDER': 2
+      - - # 参数名称
+          'PARAMETER_NAME': '参数名称1'
+          # 参数值
+          'PARAMETER_VALUE': '参数值1'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '1'
+          'SUBMIT_ORDER': 2
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称2'
+          # 参数值
+          'PARAMETER_VALUE': '参数值2'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '2'
+          'SUBMIT_ORDER': 2
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称3'
+          # 参数值
+          'PARAMETER_VALUE': '参数值3'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '3'
+          'SUBMIT_ORDER': 2
+    -
+      -
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称1'
+          # 参数值
+          'PARAMETER_VALUE': '参数值1'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '1'
+          'SUBMIT_ORDER': 2
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称2'
+          # 参数值
+          'PARAMETER_VALUE': '参数值2'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '2'
+          'SUBMIT_ORDER': 2
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称3'
+          # 参数值
+          'PARAMETER_VALUE': '参数值3'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '3'
+          'SUBMIT_ORDER': 2
+      - - # 参数名称
+          'PARAMETER_NAME': '参数名称1'
+          # 参数值
+          'PARAMETER_VALUE': '参数值1'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '1'
+          'SUBMIT_ORDER': 2
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称2'
+          # 参数值
+          'PARAMETER_VALUE': '参数值2'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '2'
+          'SUBMIT_ORDER': 2
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称3'
+          # 参数值
+          'PARAMETER_VALUE': '参数值3'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '3'
+          'SUBMIT_ORDER': 2
+      - - # 参数名称
+          'PARAMETER_NAME': '参数名称1'
+          # 参数值
+          'PARAMETER_VALUE': '参数值1'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '1'
+          'SUBMIT_ORDER': 2
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称2'
+          # 参数值
+          'PARAMETER_VALUE': '参数值2'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '2'
+          'SUBMIT_ORDER': 2
+        - # 参数名称
+          'PARAMETER_NAME': '参数名称3'
+          # 参数值
+          'PARAMETER_VALUE': '参数值3'
+          # 技术要求类型 (1 无标识, 2 星号标识（实质性要求）, 3 三角标识（重点要求）)
+          'STANDARD_TYPE': '3'
+          'SUBMIT_ORDER': 2
+  dic_require_supplier_qual:
+    -
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 1
+        # 资格要求类型 1 供应商一般资格要求, 2 供应商特殊资格要求
+        'SUPPLIER_QUAL_TYPE': '1'
+        # 序号
+        'ORDER_NO': 1
+        # 资格要求名称
+        'SUPPLIER_QUAL_NAME': '资格要求名称1'
+        # 资格要求详细说明
+        'SUPPLIER_QUAL_DETAIL': '资格要求详细说明1'
+
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 1
+        # 资格要求类型 1 供应商一般资格要求, 2 供应商特殊资格要求
+        'SUPPLIER_QUAL_TYPE': '2'
+        # 序号
+        'ORDER_NO': 2
+        # 资格要求名称
+        'SUPPLIER_QUAL_NAME': '资格要求名称2'
+        # 资格要求详细说明
+        'SUPPLIER_QUAL_DETAIL': '资格要求详细说明2'
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 1
+        # 资格要求类型 1 供应商一般资格要求, 2 供应商特殊资格要求
+        'SUPPLIER_QUAL_TYPE': '2'
+        # 序号
+        'ORDER_NO': 3
+        # 资格要求名称
+        'SUPPLIER_QUAL_NAME': '资格要求名称3'
+        # 资格要求详细说明
+        'SUPPLIER_QUAL_DETAIL': '资格要求详细说明3'
+    -
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 1
+        # 资格要求类型 1 供应商一般资格要求, 2 供应商特殊资格要求
+        'SUPPLIER_QUAL_TYPE': '1'
+        # 序号
+        'ORDER_NO': 1
+        # 资格要求名称
+        'SUPPLIER_QUAL_NAME': '资格要求名称1'
+        # 资格要求详细说明
+        'SUPPLIER_QUAL_DETAIL': '资格要求详细说明1'
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 1
+        # 资格要求类型 1 供应商一般资格要求, 2 供应商特殊资格要求
+        'SUPPLIER_QUAL_TYPE': '2'
+        # 序号
+        'ORDER_NO': 2
+        # 资格要求名称
+        'SUPPLIER_QUAL_NAME': '资格要求名称2'
+        # 资格要求详细说明
+        'SUPPLIER_QUAL_DETAIL': '资格要求详细说明2'
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 1
+        # 资格要求类型 1 供应商一般资格要求, 2 供应商特殊资格要求
+        'SUPPLIER_QUAL_TYPE': '2'
+        # 序号
+        'ORDER_NO': 3
+        # 资格要求名称
+        'SUPPLIER_QUAL_NAME': '资格要求名称3'
+        # 资格要求详细说明
+        'SUPPLIER_QUAL_DETAIL': '资格要求详细说明3'
+    -
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 1
+        # 资格要求类型 1 供应商一般资格要求, 2 供应商特殊资格要求
+        'SUPPLIER_QUAL_TYPE': '1'
+        # 序号
+        'ORDER_NO': 1
+        # 资格要求名称
+        'SUPPLIER_QUAL_NAME': '资格要求名称1'
+        # 资格要求详细说明
+        'SUPPLIER_QUAL_DETAIL': '资格要求详细说明1'
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 1
+        # 资格要求类型 1 供应商一般资格要求, 2 供应商特殊资格要求
+        'SUPPLIER_QUAL_TYPE': '2'
+        # 序号
+        'ORDER_NO': 2
+        # 资格要求名称
+        'SUPPLIER_QUAL_NAME': '资格要求名称2'
+        # 资格要求详细说明
+        'SUPPLIER_QUAL_DETAIL': '资格要求详细说明2'
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 1
+        # 资格要求类型 1 供应商一般资格要求, 2 供应商特殊资格要求
+        'SUPPLIER_QUAL_TYPE': '2'
+        # 序号
+        'ORDER_NO': 3
+        # 资格要求名称
+        'SUPPLIER_QUAL_NAME': '资格要求名称3'
+        # 资格要求详细说明
+        'SUPPLIER_QUAL_DETAIL': '资格要求详细说明3'
+
+  dic_require_contract_payment:
+    -
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 1
+        # 经济要求序号
+        'ECO_ORDER': 1
+        # 经济要求性质 1 无标识 2 星号标识
+        'ECO_NATURE': '1'
+        # 经济要求类型编码 01交货时间、地点与方式 02产品包装和运输要求 03 售后服务 04 知识产权和保密要求 05 物资编目编码、打码贴签要求
+        # 06付款及结算方式 07履约保证金和质量保证金 08备品备件要求 99其他
+        'ECO_TYPE_CODE': '01'
+        # 经济要求类型名称
+        'ECO_TYPE_NAME': '经济要求类型名称1'
+        # 要求说明
+        'ECO_DETAIL': '要求说明1'
+        # 付款及结算方式 1 无预付款 2 有预付款 3 分阶段付款 9 其他
+        'PAYMENT_TYPE': '1'
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 1
+        # 经济要求序号
+        'ECO_ORDER': 2
+        # 经济要求性质 1 无标识 2 星号标识
+        'ECO_NATURE': '2'
+        # 经济要求类型编码 01交货时间、地点与方式 02产品包装和运输要求 03 售后服务 04 知识产权和保密要求 05 物资编目编码、打码贴签要求
+        # 06付款及结算方式 07履约保证金和质量保证金 08备品备件要求 99其他
+        'ECO_TYPE_CODE': '02'
+        # 经济要求类型名称
+        'ECO_TYPE_NAME': '经济要求类型名称2'
+        # 要求说明
+        'ECO_DETAIL': '要求说明2'
+        # 付款及结算方式 1 无预付款 2 有预付款 3 分阶段付款 9 其他
+        'PAYMENT_TYPE': '2'
+    -
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 1
+        # 经济要求序号
+        'ECO_ORDER': 1
+        # 经济要求性质 1 无标识 2 星号标识
+        'ECO_NATURE': '1'
+        # 经济要求类型编码 01交货时间、地点与方式 02产品包装和运输要求 03 售后服务 04 知识产权和保密要求 05 物资编目编码、打码贴签要求
+        # 06付款及结算方式 07履约保证金和质量保证金 08备品备件要求 99其他
+        'ECO_TYPE_CODE': '01'
+        # 经济要求类型名称
+        'ECO_TYPE_NAME': '经济要求类型名称1'
+        # 要求说明
+        'ECO_DETAIL': '要求说明1'
+        # 付款及结算方式 1 无预付款 2 有预付款 3 分阶段付款 9 其他
+        'PAYMENT_TYPE': '1'
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 1
+        # 经济要求序号
+        'ECO_ORDER': 2
+        # 经济要求性质 1 无标识 2 星号标识
+        'ECO_NATURE': '2'
+        # 经济要求类型编码 01交货时间、地点与方式 02产品包装和运输要求 03 售后服务 04 知识产权和保密要求 05 物资编目编码、打码贴签要求
+        # 06付款及结算方式 07履约保证金和质量保证金 08备品备件要求 99其他
+        'ECO_TYPE_CODE': '02'
+        # 经济要求类型名称
+        'ECO_TYPE_NAME': '经济要求类型名称2'
+        # 要求说明
+        'ECO_DETAIL': '要求说明2'
+        # 付款及结算方式 1 无预付款 2 有预付款 3 分阶段付款 9 其他
+        'PAYMENT_TYPE': '2'
+    -
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 1
+        # 经济要求序号
+        'ECO_ORDER': 1
+        # 经济要求性质 1 无标识 2 星号标识
+        'ECO_NATURE': '1'
+        # 经济要求类型编码 01交货时间、地点与方式 02产品包装和运输要求 03 售后服务 04 知识产权和保密要求 05 物资编目编码、打码贴签要求
+        # 06付款及结算方式 07履约保证金和质量保证金 08备品备件要求 99其他
+        'ECO_TYPE_CODE': '01'
+        # 经济要求类型名称
+        'ECO_TYPE_NAME': '经济要求类型名称1'
+        # 要求说明
+        'ECO_DETAIL': '要求说明1'
+        # 付款及结算方式 1 无预付款 2 有预付款 3 分阶段付款 9 其他
+        'PAYMENT_TYPE': '1'
+      - # 对应需求对接轮次
+        'SUBMIT_ORDER': 1
+        # 经济要求序号
+        'ECO_ORDER': 2
+        # 经济要求性质 1 无标识 2 星号标识
+        'ECO_NATURE': '2'
+        # 经济要求类型编码 01交货时间、地点与方式 02产品包装和运输要求 03 售后服务 04 知识产权和保密要求 05 物资编目编码、打码贴签要求
+        # 06付款及结算方式 07履约保证金和质量保证金 08备品备件要求 99其他
+        'ECO_TYPE_CODE': '02'
+        # 经济要求类型名称
+        'ECO_TYPE_NAME': '经济要求类型名称2'
+        # 要求说明
+        'ECO_DETAIL': '要求说明2'
+        # 付款及结算方式 1 无预付款 2 有预付款 3 分阶段付款 9 其他
+        'PAYMENT_TYPE': '2'
+
+  dic_require_notice:
+    - # 是否组织 1 是 0 否
+      'IS_ORGANIZATION': '1'
+      # 公示类型编码 1 采购需求公示 2 单一来源公示
+      'PUBLIC_TYPE_CODE': '1'
+    -
+      'IS_ORGANIZATION': '0'
+
+      'PUBLIC_TYPE_CODE': '2'
+    -
+      'IS_ORGANIZATION': '1'
+
+      'PUBLIC_TYPE_CODE': '1'
+    -
+      'IS_ORGANIZATION': '1'
+
+      'PUBLIC_TYPE_CODE': '1'
+  dic_require_check:
+    - # 审查类型 1 需求审查 2 保密审查
+      'EXAMINATION_TYPE': '2'
+      # 审查方式 1 内部审查 2 邀请专家 3 邀请第三方机构 9 其他
+      'EXAMINATION_WAY_CODE': '2'
+      # 建议公开范围 1 公开 2 脱密脱敏公开 3 有限范围公开 4 禁止公开
+      'PUBLIC_SCOPE': '1'
+      # 建议采购方式 1 公开招标 2 邀请招标 3 竞争性谈判 4 询价 5 单一来源采购 9 其他
+      'PURCHASE_MODE': '2'
+    - # 审查类型 1 需求审查 2 保密审查
+      'EXAMINATION_TYPE': '1'
+      # 审查方式 1 内部审查 2 邀请专家 3 邀请第三方机构 9 其他
+      'EXAMINATION_WAY_CODE': '1'
+      # 建议公开范围 1 公开 2 脱密脱敏公开 3 有限范围公开 4 禁止公开
+      'PUBLIC_SCOPE': '2'
+      # 建议采购方式 1 公开招标 2 邀请招标 3 竞争性谈判 4 询价 5 单一来源采购 9 其他
+      'PURCHASE_MODE': '1'
+    - # 审查类型 1 需求审查 2 保密审查
+      'EXAMINATION_TYPE': '2'
+      # 审查方式 1 内部审查 2 邀请专家 3 邀请第三方机构 9 其他
+      'EXAMINATION_WAY_CODE': '3'
+      # 建议公开范围 1 公开 2 脱密脱敏公开 3 有限范围公开 4 禁止公开
+      'PUBLIC_SCOPE': '3'
+      # 建议采购方式 1 公开招标 2 邀请招标 3 竞争性谈判 4 询价 5 单一来源采购 9 其他
+      'PURCHASE_MODE': '4'
+  dic_require_submit:
+    - # 状态 0 需求提报 1 需求接收 2 初核退回 4 复核提报 5复核被退回
+      'STATUS': '0'
+      'CREATE_TIME': -11
+      'SUBMIT_ORDER': 1
+      # 需求复核方式 1 内部评估 2 专家论证 3 采购平台公开征求意见 9 其他方式
+      'REVIEW_TYPE': '2'
+    - # 状态 0 需求提报 1 需求接收 2 初核退回 4 复核提报 5复核被退回
+      'STATUS': '1'
+      'CREATE_TIME': -10
+      'SUBMIT_ORDER': 1
+      # 需求复核方式 1 内部评估 2 专家论证 3 采购平台公开征求意见 9 其他方式
+      'REVIEW_TYPE': '2'
+#    - # 状态 0 需求提报 1 需求接收 2 初核退回 4 复核提报 5复核被退回
+#      'STATUS': '5'
+#      'CREATE_TIME': -82
+#      'SUBMIT_ORDER': 1
+#      # 需求复核方式 1 内部评估 2 专家论证 3 采购平台公开征求意见 9 其他方式
+#      'REVIEW_TYPE': '2'
+#    - # 状态 0 需求提报 1 需求接收 2 初核退回 4 复核提报 5复核被退回
+#      'STATUS': '4'
+#      'CREATE_TIME': -50
+#      'SUBMIT_ORDER': 2
+#      # 需求复核方式 1 内部评估 2 专家论证 3 采购平台公开征求意见 9 其他方式
+#      'REVIEW_TYPE': '2'
+#    - # 状态 0 需求提报 1 需求接收 2 初核退回 4 复核提报 5复核被退回
+#      'STATUS': '5'
+#      'CREATE_TIME': -31
+#      'SUBMIT_ORDER': 2
+#      # 需求复核方式 1 内部评估 2 专家论证 3 采购平台公开征求意见 9 其他方式
+#      'REVIEW_TYPE': '2'
+#    - # 状态 0 需求提报 1 需求接收 2 初核退回 4 复核提报 5复核被退回
+#      'STATUS': '0'
+#      'CREATE_TIME': 0
+#      'SUBMIT_ORDER': 3
+#      # 需求复核方式 1 内部评估 2 专家论证 3 采购平台公开征求意见 9 其他方式
+#      'REVIEW_TYPE': '2'
+#    - # 状态 0 需求提报 1 需求接收 2 初核退回 4 复核提报 5复核被退回
+#      'STATUS': '5'
+#      'CREATE_TIME': -5
+#      'SUBMIT_ORDER': 2
+#      # 需求复核方式 1 内部评估 2 专家论证 3 采购平台公开征求意见 9 其他方式
+#      'REVIEW_TYPE': '2'
+#    - # 状态 0 需求提报 1 需求接收 2 初核退回 4 复核提报 5复核被退回
+#      'STATUS': '4'
+#      'CREATE_TIME': -5
+#      'SUBMIT_ORDER': 3
+#      # 需求复核方式 1 内部评估 2 专家论证 3 采购平台公开征求意见 9 其他方式
+#      'REVIEW_TYPE': '2'
+
+  dic_requirment_first_approval:
+    - # 初核结论 1 通过 0 不通过，退回采购需求
+      'FIRST_APPROVAL_CONCLUSION': '1'
+      # 代录需求ID
+      #      'REQUIREMENT_PROXY_ID': 'RP_ID234324324202010158'
+      # 需求对接轮次
+      'SUBMIT_ORDER': 1
+      # 初核时间
+      'FIRST_APPROVAL_COMPLETED_TIME': -9
+    #    - # 初核结论 1 通过 0 不通过，退回采购需求
+    #      'FIRST_APPROVAL_CONCLUSION': '1'
+    #      # 配套系统需求ID
+    #      'ORIGIN_REQUIRE_ID': 'REID20240602222312587'
+    #      # 代录需求ID
+    ##      'REQUIREMENT_PROXY_ID': 'RP_ID234324324201111706'
+    #      # 需求对接轮次
+    #      'SUBMIT_ORDER': 2
+    #      # 初核时间
+    #      'FIRST_APPROVAL_COMPLETED_TIME': -75
+    #    - # 初核结论 1 通过 0 不通过，退回采购需求
+    #      'FIRST_APPROVAL_CONCLUSION': '0'
+    #      # 配套系统需求ID
+    #      'ORIGIN_REQUIRE_ID': 'REID20240602222312587'
+    #      # 代录需求ID
+    ##      'REQUIREMENT_PROXY_ID': 'RP_ID234324324201111706'
+    #      # 需求对接轮次
+    #      'SUBMIT_ORDER': 3
+    #      # 初核时间
+    #      'FIRST_APPROVAL_COMPLETED_TIME': -43
+    #    - # 初核结论 1 通过 0 不通过，退回采购需求
+    #      'FIRST_APPROVAL_CONCLUSION': '0'
+    #      # 配套系统需求ID
+    #      'ORIGIN_REQUIRE_ID': 'OREID20240111150541251'
+    #      # 代录需求ID
+    #      'REQUIREMENT_PROXY_ID': 'RP_ID234324324201111507'
+    #      # 需求对接轮次
+    #      'SUBMIT_ORDER': 2
+    #      # 初核时间
+    #      'FIRST_APPROVAL_COMPLETED_TIME': -6
+    #    - # 初核结论 1 通过 0 不通过，退回采购需求
+    #      'FIRST_APPROVAL_CONCLUSION': '0'
+    #      # 配套系统需求ID
+    #      'ORIGIN_REQUIRE_ID': 'OREID20240111150541251'
+    #      # 代录需求ID
+    #      'REQUIREMENT_PROXY_ID': 'RP_ID234324324201111507'
+    #      # 需求对接轮次
+    #      'SUBMIT_ORDER': 3
+    #      # 初核时间
+    #      'FIRST_APPROVAL_COMPLETED_TIME': 0
+
+  dic_first_approval_content:
+    - # 序号
+      'ORDER_NO': 1
+      # 初核内容
+      'FIRST_APPROVAL_CONTENT': '初核内容'
+      # 初核情况 1 通过 0 不通过
+      'FIRST_APPROVAL_RESULT': '1'
+      # 不通过说明
+      'FAIL_DESC': '不通过说明1'
+#    - # 序号
+#      'ORDER_NO': 2
+#      # 初核内容
+#      'FIRST_APPROVAL_CONTENT': '初核内容'
+#      # 初核情况 1 通过 0 不通过
+#      'FIRST_APPROVAL_RESULT': '1'
+#      # 不通过说明
+#      'FAIL_DESC': '不通过说明2'
+#    - # 序号
+#      'ORDER_NO': 3
+#      # 初核内容
+#      'FIRST_APPROVAL_CONTENT': '初核内容'
+#      # 初核情况 1 通过 0 不通过
+#      'FIRST_APPROVAL_RESULT': '1'
+#      # 不通过说明
+#      'FAIL_DESC': '不通过说明3'
+
+  dic_requirment_review_approval:
+    - # 需求复核方式 1 内部评估 2 专家论证 3 采购平台公开征求意见 9 其他方式
+      'REVIEW_TYPE': '1'
+      # 复核结论_采购单位是否需要调整采购需求 1 是 0 否
+      'REVIEW_RESULT': '0'
+      # 复核时间
+      'REVIEW_APPROVAL_COMPLETED_TIME': -8
+      # 需求复核发现的问题
+      'REVIEW_QUESTION': '需求复核发现的问题1'
+      # 需求对接轮次
+      'SUBMIT_ORDER': 1
+    #    - # 需求复核方式 1 内部评估 2 专家论证 3 采购平台公开征求意见 9 其他方式
+    #      'REVIEW_TYPE': '3'
+    #      # 复核结论_采购单位是否需要调整采购需求 1 是 0 否
+    #      'REVIEW_RESULT': '0'
+    #      # 复核时间
+    #      'REVIEW_APPROVAL_COMPLETED_TIME': -4
+    #      # 需求复核发现的问题
+    #      'REVIEW_QUESTION': '需求复核发现的问题1'
+    #      # 需求对接轮次
+    #      'SUBMIT_ORDER': 3
+    #    - # 需求复核方式 1 内部评估 2 专家论证 3 采购平台公开征求意见 9 其他方式
+    #      'REVIEW_TYPE': '3'
+    #      # 复核结论_采购单位是否需要调整采购需求 1 是 0 否
+    #      'REVIEW_RESULT': '0'
+    #      # 复核时间
+    #      'REVIEW_APPROVAL_COMPLETED_TIME': 0
+    #      # 需求复核发现的问题
+    #      'REVIEW_QUESTION': '需求复核发现的问题2'
+    #      # 需求对接轮次
+    #      'SUBMIT_ORDER': 4
+
+  dic_review_approval_content:
+    - # 序号
+      'ORDER_NO': 1
+      # 复核内容分组
+      'REVIEW_APPROVAL_CONTENT_GROUP': '复核内容分组1'
+      # 复核内容
+      'REVIEW_APPROVAL_CONTENT': '复核内容1'
+      # 复核情况 1 通过 0 不通过
+      'REVIEW_APPROVAL_RESULT': '1'
+      # 不通过说明
+      'FAIL_DESC': '不通过说明1'
+#    - # 序号
+#      'ORDER_NO': 2
+#      # 复核内容分组
+#      'REVIEW_APPROVAL_CONTENT_GROUP': '复核内容分组2'
+#      # 复核内容
+#      'REVIEW_APPROVAL_CONTENT': '复核内容2'
+#      # 复核情况 1 通过 0 不通过
+#      'REVIEW_APPROVAL_RESULT': '0'
+#      # 不通过说明
+#      'FAIL_DESC': '不通过说明2'
