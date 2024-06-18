@@ -1,0 +1,55 @@
+
+-
+  dic_contract_edit:
+    # 1 公开招标 2 邀请招标 3 竞争性谈判 4 询价 5 单一来源 6 执行采购结果 7 网上采购 8 其它 9 直接面向市场采购
+    'PROCUREMENT_METHOD': '1'
+
+  dic_contract_object_detail:
+    -
+      'DATA_STATUS': '0'
+    - 'DATA_STATUS': '0'
+    - 'DATA_STATUS': '0'
+
+  dic_contract_archive:
+    'DATA_STATUS': '0'
+
+  dic_contract_delivery_acceptance:
+    'DATA_STATUS': '0'
+
+  dic_contract_pay_closing:
+    'DATA_STATUS': '0'
+
+  dic_contract_proposal_approval:
+    'DATA_STATUS': '0'
+
+  dic_contract_conclusion:
+    -
+      'DATA_STATUS': '0'
+  dic_contract_project:
+    'DATA_STATUS': '0'
+
+  dic_contract_delivery_project:
+    'DATA_STATUS': '0'
+
+  dic_contract_pay_project:
+    'DATA_STATUS': '0'
+
+  dic_contract_implementation:
+    - 'DATA_STATUS': '0'
+    - 'DATA_STATUS': '0'
+
+  dic_contract_modi:
+    - 'DATA_STATUS': '0'
+    - 'DATA_STATUS': '0'
+
+  dic_contract_change:
+    -
+      - 'DATA_STATUS': '0'
+      - 'DATA_STATUS': '0'
+
+    - - 'DATA_STATUS': '0'
+      - 'DATA_STATUS': '0'
+
+  dic_contract_cancel:
+    - 'DATA_STATUS': '0'
+    - 'DATA_STATUS': '0'
