@@ -1,0 +1,6436 @@
+-
+
+  dic_excute:
+    'plan_quar': 1
+    'require_compilation': 1
+    'intention_notice': 1
+    'require_survey': 0
+    'survey_detail': 1
+    'purchase_demonstration': 1
+    'demonstration_detail': 1
+    'require_project': 1
+    'require_notice': 1
+    'require_check': 1
+    'require_submit': 1
+  dic_tender_doc:
+    - # 项目规模
+      'section_ids': 2
+      # 招标（补遗）文件名称
+      'tender_doc_name': '招标（补遗）文件名称1'
+      # 招标（补遗）文件内容
+      'tender_doc_content': '招标（补遗）文件内容1'
+    - # 项目规模
+      'section_ids': 2
+      # 招标（补遗）文件名称
+      'tender_doc_name': '招标（补遗）文件名称2'
+      # 招标（补遗）文件内容
+      'tender_doc_content': '招标（补遗）文件内容2'
+  dic_tender_doc_item:
+    - # 评审方法 1 综合评审法 2 质量优先法 3 最低价法
+      'eval_method': '1'
+      # 开标模式 1 单信封 2 双信封
+      'bid_opening_mode': '1'
+      # 是否设置最高限价 1 是 0 否
+      'control_price_if': '1'
+      # 价款形式 1 金额 2 费率 3 比率 4 优惠率 5 合格率 6下浮率 7 折扣 8 单价 9 其他
+      'price_form_code': '1'
+      # 金额类招标控制价 单位：元
+      'control_price': 50000
+    - # 评审方法 1 综合评审法 2 质量优先法 3 最低价法
+      'eval_method': '2'
+      # 开标模式 1 单信封 2 双信封
+      'bid_opening_mode': '2'
+      # 是否设置最高限价 1 是 0 否
+      'control_price_if': '0'
+      # 价款形式 1 金额 2 费率 3 比率 4 优惠率 5 合格率 6下浮率 7 折扣 8 单价 9 其他
+      'price_form_code': '1'
+      # 金额类招标控制价 单位：元
+      'control_price': 60000
+  dic_tender_doc_step:
+    -
+     - # 评审步骤名称
+       'step_name': '标段1评审步骤名称1'
+       # 排序
+       'sequence_num': 1
+       # 评审步骤评标（审）方式 1 打分制 2 通过/符合制 9 其他
+       'step_eval_type': '1'
+       # 评审步骤总分（最高分）
+       'score': 78.21
+       # 权重
+       'weight': 22
+     - # 评审步骤名称
+       'step_name': '标段1评审步骤名称2'
+       # 排序
+       'sequence_num': 2
+       # 评审步骤评标（审）方式 1 打分制 2 通过/符合制 9 其他
+       'step_eval_type': '1'
+       # 评审步骤总分（最高分）
+       'score': 88.21
+       # 权重
+       'weight': 25
+     - # 评审步骤名称
+       'step_name': '标段1评审步骤名称3'
+       # 排序
+       'sequence_num': 3
+       # 评审步骤评标（审）方式 1 打分制 2 通过/符合制 9 其他
+       'step_eval_type': '1'
+       # 评审步骤总分（最高分）
+       'score': 45.21
+       # 权重
+       'weight': 25
+    -
+      - # 评审步骤名称
+        'step_name': '标段2评审步骤名称1'
+        # 排序
+        'sequence_num': 1
+        # 评审步骤评标（审）方式 1 打分制 2 通过/符合制 9 其他
+        'step_eval_type': '1'
+        # 评审步骤总分（最高分）
+        'score': 78.21
+        # 权重
+        'weight': 22
+      - # 评审步骤名称
+        'step_name': '标段2评审步骤名称2'
+        # 排序
+        'sequence_num': 2
+        # 评审步骤评标（审）方式 1 打分制 2 通过/符合制 9 其他
+        'step_eval_type': '1'
+        # 评审步骤总分（最高分）
+        'score': 88.21
+        # 权重
+        'weight': 25
+      - # 评审步骤名称
+        'step_name': '标段2评审步骤名称3'
+        # 排序
+        'sequence_num': 3
+        # 评审步骤评标（审）方式 1 打分制 2 通过/符合制 9 其他
+        'step_eval_type': '1'
+        # 评审步骤总分（最高分）
+        'score': 45.21
+        # 权重
+        'weight': 25
+  dic_tender_doc_clause:
+   -
+     -
+       - # 条款级别
+        'level': 1
+        # 排序
+        'sequence_num': 1
+        # 是否评审条款组 1 是 0 否
+        'clause_group': '1'
+        # 评审因素
+        'eval_factor': '评审因素1'
+        # 评审标准
+        'eval_standard': '评审标准1'
+        # 条款评标（审）方式 1 打分制 2 通过/符合制 9 其他
+        'clause_eval_type': '1'
+        # 评审因素分值
+        'clause_score_original': 78.12
+       - # 条款级别
+        'level': 1
+        # 排序
+        'sequence_num': 2
+        # 是否评审条款组 1 是 0 否
+        'clause_group': '1'
+        # 评审因素
+        'eval_factor': '评审因素2'
+        # 评审标准
+        'eval_standard': '评审标准2'
+        # 条款评标（审）方式 1 打分制 2 通过/符合制 9 其他
+        'clause_eval_type': '1'
+        # 评审因素分值
+        'clause_score_original': 56.12
+     -
+       - # 条款级别
+         'level': 1
+         # 排序
+         'sequence_num': 1
+         # 是否评审条款组 1 是 0 否
+         'clause_group': '1'
+         # 评审因素
+         'eval_factor': '评审因素1'
+         # 评审标准
+         'eval_standard': '评审标准1'
+         # 条款评标（审）方式 1 打分制 2 通过/符合制 9 其他
+         'clause_eval_type': '1'
+         # 评审因素分值
+         'clause_score_original': 78.12
+       - # 条款级别
+         'level': 1
+         # 排序
+         'sequence_num': 2
+         # 是否评审条款组 1 是 0 否
+         'clause_group': '1'
+         # 评审因素
+         'eval_factor': '评审因素2'
+         # 评审标准
+         'eval_standard': '评审标准2'
+         # 条款评标（审）方式 1 打分制 2 通过/符合制 9 其他
+         'clause_eval_type': '1'
+         # 评审因素分值
+         'clause_score_original': 56.12
+
+     -
+       - # 条款级别
+         'level': 1
+         # 排序
+         'sequence_num': 1
+         # 是否评审条款组 1 是 0 否
+         'clause_group': '1'
+         # 评审因素
+         'eval_factor': '评审因素1'
+         # 评审标准
+         'eval_standard': '评审标准1'
+         # 条款评标（审）方式 1 打分制 2 通过/符合制 9 其他
+         'clause_eval_type': '1'
+         # 评审因素分值
+         'clause_score_original': 78.12
+       - # 条款级别
+         'level': 1
+         # 排序
+         'sequence_num': 2
+         # 是否评审条款组 1 是 0 否
+         'clause_group': '1'
+         # 评审因素
+         'eval_factor': '评审因素2'
+         # 评审标准
+         'eval_standard': '评审标准2'
+         # 条款评标（审）方式 1 打分制 2 通过/符合制 9 其他
+         'clause_eval_type': '1'
+         # 评审因素分值
+         'clause_score_original': 56.12
+   -
+     -
+       - # 条款级别
+        'level': 1
+        # 排序
+        'sequence_num': 1
+        # 是否评审条款组 1 是 0 否
+        'clause_group': '1'
+        # 评审因素
+        'eval_factor': '评审因素1'
+        # 评审标准
+        'eval_standard': '评审标准1'
+        # 条款评标（审）方式 1 打分制 2 通过/符合制 9 其他
+        'clause_eval_type': '1'
+        # 评审因素分值
+        'clause_score_original': 78.12
+       - # 条款级别
+        'level': 1
+        # 排序
+        'sequence_num': 2
+        # 是否评审条款组 1 是 0 否
+        'clause_group': '1'
+        # 评审因素
+        'eval_factor': '评审因素2'
+        # 评审标准
+        'eval_standard': '评审标准2'
+        # 条款评标（审）方式 1 打分制 2 通过/符合制 9 其他
+        'clause_eval_type': '1'
+        # 评审因素分值
+        'clause_score_original': 56.12
+     -
+       - # 条款级别
+         'level': 1
+         # 排序
+         'sequence_num': 1
+         # 是否评审条款组 1 是 0 否
+         'clause_group': '1'
+         # 评审因素
+         'eval_factor': '评审因素1'
+         # 评审标准
+         'eval_standard': '评审标准1'
+         # 条款评标（审）方式 1 打分制 2 通过/符合制 9 其他
+         'clause_eval_type': '1'
+         # 评审因素分值
+         'clause_score_original': 78.12
+       - # 条款级别
+         'level': 1
+         # 排序
+         'sequence_num': 2
+         # 是否评审条款组 1 是 0 否
+         'clause_group': '1'
+         # 评审因素
+         'eval_factor': '评审因素2'
+         # 评审标准
+         'eval_standard': '评审标准2'
+         # 条款评标（审）方式 1 打分制 2 通过/符合制 9 其他
+         'clause_eval_type': '1'
+         # 评审因素分值
+         'clause_score_original': 56.12
+
+     -
+       - # 条款级别
+         'level': 1
+         # 排序
+         'sequence_num': 1
+         # 是否评审条款组 1 是 0 否
+         'clause_group': '1'
+         # 评审因素
+         'eval_factor': '评审因素1'
+         # 评审标准
+         'eval_standard': '评审标准1'
+         # 条款评标（审）方式 1 打分制 2 通过/符合制 9 其他
+         'clause_eval_type': '1'
+         # 评审因素分值
+         'clause_score_original': 78.12
+       - # 条款级别
+         'level': 1
+         # 排序
+         'sequence_num': 2
+         # 是否评审条款组 1 是 0 否
+         'clause_group': '1'
+         # 评审因素
+         'eval_factor': '评审因素2'
+         # 评审标准
+         'eval_standard': '评审标准2'
+         # 条款评标（审）方式 1 打分制 2 通过/符合制 9 其他
+         'clause_eval_type': '1'
+         # 评审因素分值
+         'clause_score_original': 56.12
+  dic_qual_doc:
+    - # 资审（补遗）文件名称
+      'qual_doc_name': '资审（补遗）文件名称1'
+      # 是否引用范本 1 有 0 无（如上传PDF文件）
+      'standard_eval_rule_quote': '1'
+      # 文件是否含有敏感词 1 是 0 否
+      'sensitive_if': '0'
+      # 涉敏段落
+      'sensitive_para': '涉敏段落1'
+    - # 资审（补遗）文件名称
+      'qual_doc_name': '资审（补遗）文件名称1'
+      # 是否引用范本 1 有 0 无（如上传PDF文件）
+      'standard_eval_rule_quote': '1'
+      # 文件是否含有敏感词 1 是 0 否
+      'sensitive_if': '1'
+      # 涉敏段落
+      'sensitive_para': '涉敏段落2'
+  dic_qual_doc_item:
+    - # 申请有效期 单位：天
+      'valid_period': 30
+      # 审查方法 1 合格制 2 有限数量制
+      'examine_type': '1'
+      # 通过资审的申请人数量
+      'passed_applicant_num': 10
+    - # 申请有效期 单位：天
+      'valid_period': 35
+      # 审查方法 1 合格制 2 有限数量制
+      'examine_type': '2'
+      # 通过资审的申请人数量
+      'passed_applicant_num': 8
+
+  dic_doc_exec:
+    -
+      - # 业务环节编码 1采购单位预立项，提交信息 2 采购服务中心敏感词审核（审核通过视为文件编制开始） 3 采购代理提交文件（视为文件编制完成） 4 采购单位确认文件
+        'business_step_type': '1'
+        # 业务环节状态 0 不通过，返回修改 1 通过 2 已提交
+        'audit_result': '2'
+        # 意见
+        'content': '意见qhtest'
+      - # 业务环节编码 1采购单位预立项，提交信息 2 采购服务中心敏感词审核（审核通过视为文件编制开始） 3 采购代理提交文件（视为文件编制完成） 4 采购单位确认文件
+        'business_step_type': '1'
+        # 业务环节状态 0 不通过，返回修改 1 通过 2 已提交
+        'audit_result': '1'
+        # 意见
+        'content': '意见qhtest'
+      - # 业务环节编码 1采购单位预立项，提交信息 2 采购服务中心敏感词审核（审核通过视为文件编制开始） 3 采购代理提交文件（视为文件编制完成） 4 采购单位确认文件
+        'business_step_type': '2'
+        # 业务环节状态 0 不通过，返回修改 1 通过 2 已提交
+        'audit_result': '2'
+        # 意见
+        'content': '意见qhtest'
+      - # 业务环节编码 1采购单位预立项，提交信息 2 采购服务中心敏感词审核（审核通过视为文件编制开始） 3 采购代理提交文件（视为文件编制完成） 4 采购单位确认文件
+        'business_step_type': '2'
+        # 业务环节状态 0 不通过，返回修改 1 通过 2 已提交
+        'audit_result': '1'
+        # 意见
+        'content': '意见qhtest'
+      - # 业务环节编码 1采购单位预立项，提交信息 2 采购服务中心敏感词审核（审核通过视为文件编制开始） 3 采购代理提交文件（视为文件编制完成） 4 采购单位确认文件
+        'business_step_type': '3'
+        # 业务环节状态 0 不通过，返回修改 1 通过 2 已提交
+        'audit_result': '1'
+        # 意见
+        'content': '意见qhtest'
+      - # 业务环节编码 1采购单位预立项，提交信息 2 采购服务中心敏感词审核（审核通过视为文件编制开始） 3 采购代理提交文件（视为文件编制完成） 4 采购单位确认文件
+        'business_step_type': '4'
+        # 业务环节状态 0 不通过，返回修改 1 通过 2 已提交
+        'audit_result': '1'
+        # 意见
+        'content': '意见qhtest'
+    -
+      - # 业务环节编码 1采购单位预立项，提交信息 2 采购服务中心敏感词审核（审核通过视为文件编制开始） 3 采购代理提交文件（视为文件编制完成） 4 采购单位确认文件
+        'business_step_type': '1'
+        # 业务环节状态 0 不通过，返回修改 1 通过 2 已提交
+        'audit_result': '2'
+        # 意见
+        'content': '意见qhtest'
+      - # 业务环节编码 1采购单位预立项，提交信息 2 采购服务中心敏感词审核（审核通过视为文件编制开始） 3 采购代理提交文件（视为文件编制完成） 4 采购单位确认文件
+        'business_step_type': '1'
+        # 业务环节状态 0 不通过，返回修改 1 通过 2 已提交
+        'audit_result': '1'
+        # 意见
+        'content': '意见qhtest'
+      - # 业务环节编码 1采购单位预立项，提交信息 2 采购服务中心敏感词审核（审核通过视为文件编制开始） 3 采购代理提交文件（视为文件编制完成） 4 采购单位确认文件
+        'business_step_type': '2'
+        # 业务环节状态 0 不通过，返回修改 1 通过 2 已提交
+        'audit_result': '2'
+        # 意见
+        'content': '意见qhtest'
+      - # 业务环节编码 1采购单位预立项，提交信息 2 采购服务中心敏感词审核（审核通过视为文件编制开始） 3 采购代理提交文件（视为文件编制完成） 4 采购单位确认文件
+        'business_step_type': '2'
+        # 业务环节状态 0 不通过，返回修改 1 通过 2 已提交
+        'audit_result': '1'
+        # 意见
+        'content': '意见qhtest'
+      - # 业务环节编码 1采购单位预立项，提交信息 2 采购服务中心敏感词审核（审核通过视为文件编制开始） 3 采购代理提交文件（视为文件编制完成） 4 采购单位确认文件
+        'business_step_type': '3'
+        # 业务环节状态 0 不通过，返回修改 1 通过 2 已提交
+        'audit_result': '1'
+        # 意见
+        'content': '意见qhtest'
+      - # 业务环节编码 1采购单位预立项，提交信息 2 采购服务中心敏感词审核（审核通过视为文件编制开始） 3 采购代理提交文件（视为文件编制完成） 4 采购单位确认文件
+        'business_step_type': '4'
+        # 业务环节状态 0 不通过，返回修改 1 通过 2 已提交
+        'audit_result': '1'
+        # 意见
+        'content': '意见qhtest'
+
+
+
+
+  dic_base_project:
+    # 项目规模
+    'base_project_scale': '项目规模1'
+    # 资金来源 1 本级经费 2 上级拨款 9 其他
+    'fund_source': '2'
+    # 出资比例
+    'fund_scale': '出资比例1'
+    # 资金落实情况
+    'fund_process': '资金落实情况1'
+    # 项目投资批复金额
+    'invest_amount': 5000000
+    # 项目估算金额
+    'project_est_amount': 5000000
+
+  dic_tender_project:
+     # 招标项目名称
+     # 'tender_project_name': 'QH测试招标项目名称1110'
+     # 采购机构名称
+     'inner_agency_name': '采购机构名称1'
+     # 采购机构代码
+     'inner_agency_code': '采购机构代码1'
+     # 采购机构类型 1 采购服务站 2 部门采购服务站 3 队属采购机构 4 自行采购单位
+     'inner_agency_type': '1'
+     # 网络模式 1 外网云平台 2 内网云平台（不见面） 3 内网云平台 4 内网本地（不见面） 5 内网本地
+     'net_mode': '1'
+     # 招标组织形式 1 自行招标（采购） 2 委托招标（采购）
+     'tender_organize_form': '1'
+     # 招标方式 1 公开招标 2 邀请招标 3 竞争性谈判 4 询价 5 单一来源采购 9 其他
+     'tender_mode': '2'
+     # 资格审查方式 1 资格预审 2 资格后审
+     'qual_type': '2'
+     # 项目划分 1 小型项目 2 中型项目 3 大型项目
+     'project_scale': '2'
+     # 投标人征集方式 1 公告征集 2 供应商库（JC）抽取 3 书面推荐 4 供应商库（ZDGC库）抽取 9 其他
+     'bidder_collect_form': '1'
+  dic_ce_section:
+    - # 标段编号
+      'section_code': '标段编号1'
+      # 标段名称
+      'section_name': '标段名称1'
+      # 建设类型 1新建工程 2改建工程 3扩建工程 4装修改造
+      'construction_type_code': '1'
+      # 标段内容
+      'section_content': '标段内容1'
+      # 标段分类代码
+      'section_classify_code': '标段分类代码1'
+      # 标段分类名称
+      'section_classify': '标段分类名称1'
+      # 标段估算价
+      'total_contract_reckon_price': 5000000
+      # 计划工期
+      'plan_limit_time': '计划工期1'
+    - # 标段编号
+      'section_code': '标段编号2'
+      # 标段名称
+      'section_name': '标段名称2'
+      # 建设类型 1新建工程 2改建工程 3扩建工程 4装修改造
+      'construction_type_code': '2'
+      # 标段内容
+      'section_content': '标段内容2'
+      # 标段分类代码
+      'section_classify_code': '标段分类代码2'
+      # 标段分类名称
+      'section_classify': '标段分类名称2'
+      # 标段估算价
+      'total_contract_reckon_price': 6000000
+      # 计划工期
+      'plan_limit_time': '计划工期2'
+
+  dic_venue_info:
+    -
+      - # 场地用途 01 资审开标 02 资审评审 03 评标 04 竞价 05 答疑会 06 论证会 07 清标 08 谈判 09 开标 99 其他
+        'venue_mode': '09'
+        # 是否远程异地评标 1 是 0 否
+        'remote_eval_if': '0'
+        # 是否主场 1 是 0 否
+        'is_home': '1'
+        # 场地名称
+        'venue_name': '场地名称1'
+        # 标室名称
+        'room': '标室名称1'
+      - # 场地用途 01 资审开标 02 资审评审 03 评标 04 竞价 05 答疑会 06 论证会 07 清标 08 谈判 09 开标 99 其他
+        'venue_mode': '03'
+        # 是否远程异地评标 1 是 0 否
+        'remote_eval_if': '0'
+        # 是否主场 1 是 0 否
+        'is_home': '1'
+        # 场地名称
+        'venue_name': '场地名称1'
+        # 标室名称
+        'room': '标室名称1'
+    -
+      - # 场地用途 01 资审开标 02 资审评审 03 评标 04 竞价 05 答疑会 06 论证会 07 清标 08 谈判 09 开标 99 其他
+        'venue_mode': '09'
+        # 是否远程异地评标 1 是 0 否
+        'remote_eval_if': '0'
+        # 是否主场 1 是 0 否
+        'is_home': '1'
+        # 场地名称
+        'venue_name': '场地名称1'
+        # 标室名称
+        'room': '标室名称1'
+      - # 场地用途 01 资审开标 02 资审评审 03 评标 04 竞价 05 答疑会 06 论证会 07 清标 08 谈判 09 开标 99 其他
+        'venue_mode': '03'
+        # 是否远程异地评标 1 是 0 否
+        'remote_eval_if': '0'
+        # 是否主场 1 是 0 否
+        'is_home': '1'
+        # 场地名称
+        'venue_name': '场地名称1'
+        # 标室名称
+        'room': '标室名称1'
+
+  dic_ce_invitation:
+    - # 邀请书性质 1 首次 2 更正 3 澄清
+      'invitation_nature': '1'
+      # 邀请书标题
+      'invitation_name': '邀请书标题1'
+      # 邀请书内容
+      'invitation_content': '邀请书内容1'
+      # 招标代理机构地址
+      'agency_address': '招标代理机构地址1'
+      # 招标代理联系人
+      'agency_contactor': '招标代理联系人1'
+      # 招标代理联系电话
+      'agency_phone': '招标代理联系电话1'
+    - # 邀请书性质 1 首次 2 更正 3 澄清
+      'invitation_nature': '2'
+      # 邀请书标题
+      'invitation_name': '邀请书标题2'
+      # 邀请书内容
+      'invitation_content': '邀请书内容2'
+      # 招标代理机构地址
+      'agency_address': '招标代理机构地址2'
+      # 招标代理联系人
+      'agency_contactor': '招标代理联系人2'
+      # 招标代理联系电话
+      'agency_phone': '招标代理联系电话2'
+    - # 邀请书性质 1 首次 2 更正 3 澄清
+      'invitation_nature': '3'
+      # 邀请书标题
+      'invitation_name': '邀请书标题3'
+      # 邀请书内容
+      'invitation_content': '邀请书内容3'
+      # 招标代理机构地址
+      'agency_address': '招标代理机构地址3'
+      # 招标代理联系人
+      'agency_contactor': '招标代理联系人3'
+      # 招标代理联系电话
+      'agency_phone': '招标代理联系电话3'
+
+  dic_ce_invitation_item:
+    -
+      - # 文件获取方式 1 网上下载 2 线下获取
+        'tender_doc_get_method': '1'
+        # 文件获取地点
+        'tender_doc_get_address': '文件获取地点1'
+        # 文件是否收费 1 是 0 否
+        'charge_if': '1'
+        # 投标（报价）文件递交方式 1 现场递交 2 系统上传
+        'bid_doc_refer_method': '1'
+        # 投标（报价）文件递交地址
+        'bid_doc_refer_address': '文件递交地址1'
+      - # 文件获取方式 1 网上下载 2 线下获取
+        'tender_doc_get_method': '2'
+        # 文件获取地点
+        'tender_doc_get_address': '文件获取地点2'
+        # 文件是否收费 1 是 0 否
+        'charge_if': '1'
+        # 投标（报价）文件递交方式 1 现场递交 2 系统上传
+        'bid_doc_refer_method': '1'
+        # 投标（报价）文件递交地址
+        'bid_doc_refer_address': '文件递交地址2'
+      - # 文件获取方式 1 网上下载 2 线下获取
+        'tender_doc_get_method': '1'
+        # 文件获取地点
+        'tender_doc_get_address': '文件获取地点3'
+        # 文件是否收费 1 是 0 否
+        'charge_if': '1'
+        # 投标（报价）文件递交方式 1 现场递交 2 系统上传
+        'bid_doc_refer_method': '1'
+        # 投标（报价）文件递交地址
+        'bid_doc_refer_address': '文件递交地址3'
+    -
+      - # 文件获取方式 1 网上下载 2 线下获取
+        'tender_doc_get_method': '1'
+        # 文件获取地点
+        'tender_doc_get_address': '文件获取地点1'
+        # 文件是否收费 1 是 0 否
+        'charge_if': '1'
+        # 投标（报价）文件递交方式 1 现场递交 2 系统上传
+        'bid_doc_refer_method': '1'
+        # 投标（报价）文件递交地址
+        'bid_doc_refer_address': '文件递交地址1'
+      - # 文件获取方式 1 网上下载 2 线下获取
+        'tender_doc_get_method': '2'
+        # 文件获取地点
+        'tender_doc_get_address': '文件获取地点2'
+        # 文件是否收费 1 是 0 否
+        'charge_if': '1'
+        # 投标（报价）文件递交方式 1 现场递交 2 系统上传
+        'bid_doc_refer_method': '1'
+        # 投标（报价）文件递交地址
+        'bid_doc_refer_address': '文件递交地址2'
+      - # 文件获取方式 1 网上下载 2 线下获取
+        'tender_doc_get_method': '1'
+        # 文件获取地点
+        'tender_doc_get_address': '文件获取地点3'
+        # 文件是否收费 1 是 0 否
+        'charge_if': '1'
+        # 投标（报价）文件递交方式 1 现场递交 2 系统上传
+        'bid_doc_refer_method': '1'
+        # 投标（报价）文件递交地址
+        'bid_doc_refer_address': '文件递交地址3'
+
+  dic_ce_invitation_result:
+    -
+      -
+        - # 被邀请人名称
+          'invitee_name': '投标人名称1'
+          # 被邀请人代码
+          'invitee_code': '投标人代码1'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称2'
+          # 被邀请人代码
+          'invitee_code': '投标人代码2'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称3'
+          # 被邀请人代码
+          'invitee_code': '投标人代码3'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称4'
+          # 被邀请人代码
+          'invitee_code': '投标人代码4'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称5'
+          # 被邀请人代码
+          'invitee_code': '投标人代码5'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称6'
+          # 被邀请人代码
+          'invitee_code': '投标人代码6'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '0'
+      -
+        - # 被邀请人名称
+          'invitee_name': '投标人名称1'
+          # 被邀请人代码
+          'invitee_code': '投标人代码1'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称2'
+          # 被邀请人代码
+          'invitee_code': '投标人代码2'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称3'
+          # 被邀请人代码
+          'invitee_code': '投标人代码3'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称4'
+          # 被邀请人代码
+          'invitee_code': '投标人代码4'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称5'
+          # 被邀请人代码
+          'invitee_code': '投标人代码5'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称6'
+          # 被邀请人代码
+          'invitee_code': '投标人代码6'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '0'
+      -
+        - # 被邀请人名称
+          'invitee_name': '投标人名称1'
+          # 被邀请人代码
+          'invitee_code': '投标人代码1'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称2'
+          # 被邀请人代码
+          'invitee_code': '投标人代码2'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称3'
+          # 被邀请人代码
+          'invitee_code': '投标人代码3'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称4'
+          # 被邀请人代码
+          'invitee_code': '投标人代码4'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称5'
+          # 被邀请人代码
+          'invitee_code': '投标人代码5'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称6'
+          # 被邀请人代码
+          'invitee_code': '投标人代码6'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '0'
+    -
+      -
+        - # 被邀请人名称
+          'invitee_name': '投标人名称1'
+          # 被邀请人代码
+          'invitee_code': '投标人代码1'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称2'
+          # 被邀请人代码
+          'invitee_code': '投标人代码2'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称3'
+          # 被邀请人代码
+          'invitee_code': '投标人代码3'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称4'
+          # 被邀请人代码
+          'invitee_code': '投标人代码4'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称5'
+          # 被邀请人代码
+          'invitee_code': '投标人代码5'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称6'
+          # 被邀请人代码
+          'invitee_code': '投标人代码6'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '0'
+      -
+        - # 被邀请人名称
+          'invitee_name': '投标人名称1'
+          # 被邀请人代码
+          'invitee_code': '投标人代码1'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称2'
+          # 被邀请人代码
+          'invitee_code': '投标人代码2'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称3'
+          # 被邀请人代码
+          'invitee_code': '投标人代码3'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称4'
+          # 被邀请人代码
+          'invitee_code': '投标人代码4'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称5'
+          # 被邀请人代码
+          'invitee_code': '投标人代码5'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称6'
+          # 被邀请人代码
+          'invitee_code': '投标人代码6'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '0'
+      -
+        - # 被邀请人名称
+          'invitee_name': '投标人名称1'
+          # 被邀请人代码
+          'invitee_code': '投标人代码1'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称2'
+          # 被邀请人代码
+          'invitee_code': '投标人代码2'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称3'
+          # 被邀请人代码
+          'invitee_code': '投标人代码3'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称4'
+          # 被邀请人代码
+          'invitee_code': '投标人代码4'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称5'
+          # 被邀请人代码
+          'invitee_code': '投标人代码5'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '1'
+        - # 被邀请人名称
+          'invitee_name': '投标人名称6'
+          # 被邀请人代码
+          'invitee_code': '投标人代码6'
+          # 是否接受邀请 1 是 0 否
+          'accept_if': '0'
+
+
+  dic_ce_bidder_enroll:
+    - - # 投标人名称
+        'bidder_name': '投标人名称1'
+        # 投标人代码
+        'bidder_code': '投标人代码1'
+        # 是否联合体 1 是 0 否
+        'union_if': '0'
+        # 报名类型 1 资审报名 2 投标报名
+        'enroll_type': '2'
+        # 报名确认结果 1 通过 0 不通过
+        'enroll_result': '1'
+      - # 投标人名称
+        'bidder_name': '投标人名称2'
+        # 投标人代码
+        'bidder_code': '投标人代码2'
+        # 是否联合体 1 是 0 否
+        'union_if': '0'
+        # 报名类型 1 资审报名 2 投标报名
+        'enroll_type': '2'
+        # 报名确认结果 1 通过 0 不通过
+        'enroll_result': '1'
+      - # 投标人名称
+        'bidder_name': '投标人名称3'
+        # 投标人代码
+        'bidder_code': '投标人代码3'
+        # 是否联合体 1 是 0 否
+        'union_if': '1'
+        # 报名类型 1 资审报名 2 投标报名
+        'enroll_type': '2'
+        # 报名确认结果 1 通过 0 不通过
+        'enroll_result': '1'
+      - # 投标人名称
+        'bidder_name': '投标人名称4'
+        # 投标人代码
+        'bidder_code': '投标人代码4'
+        # 是否联合体 1 是 0 否
+        'union_if': '0'
+        # 报名类型 1 资审报名 2 投标报名
+        'enroll_type': '2'
+        # 报名确认结果 1 通过 0 不通过
+        'enroll_result': '0'
+      - # 投标人名称
+        'bidder_name': '投标人名称5'
+        # 投标人代码
+        'bidder_code': '投标人代码5'
+        # 是否联合体 1 是 0 否
+        'union_if': '0'
+        # 报名类型 1 资审报名 2 投标报名
+        'enroll_type': '2'
+        # 报名确认结果 1 通过 0 不通过
+        'enroll_result': '1'
+    - - # 投标人名称
+        'bidder_name': '投标人名称1'
+        # 投标人代码
+        'bidder_code': '投标人代码1'
+        # 是否联合体 1 是 0 否
+        'union_if': '0'
+        # 报名类型 1 资审报名 2 投标报名
+        'enroll_type': '2'
+        # 报名确认结果 1 通过 0 不通过
+        'enroll_result': '1'
+      - # 投标人名称
+        'bidder_name': '投标人名称2'
+        # 投标人代码
+        'bidder_code': '投标人代码2'
+        # 是否联合体 1 是 0 否
+        'union_if': '0'
+        # 报名类型 1 资审报名 2 投标报名
+        'enroll_type': '2'
+        # 报名确认结果 1 通过 0 不通过
+        'enroll_result': '1'
+      - # 投标人名称
+        'bidder_name': '投标人名称3'
+        # 投标人代码
+        'bidder_code': '投标人代码3'
+        # 是否联合体 1 是 0 否
+        'union_if': '1'
+        # 报名类型 1 资审报名 2 投标报名
+        'enroll_type': '2'
+        # 报名确认结果 1 通过 0 不通过
+        'enroll_result': '1'
+      - # 投标人名称
+        'bidder_name': '投标人名称4'
+        # 投标人代码
+        'bidder_code': '投标人代码4'
+        # 是否联合体 1 是 0 否
+        'union_if': '0'
+        # 报名类型 1 资审报名 2 投标报名
+        'enroll_type': '2'
+        # 报名确认结果 1 通过 0 不通过
+        'enroll_result': '0'
+      - # 投标人名称
+        'bidder_name': '投标人名称5'
+        # 投标人代码
+        'bidder_code': '投标人代码5'
+        # 是否联合体 1 是 0 否
+        'union_if': '0'
+        # 报名类型 1 资审报名 2 投标报名
+        'enroll_type': '2'
+        # 报名确认结果 1 通过 0 不通过
+        'enroll_result': '1'
+      - # 投标人名称
+        'bidder_name': '投标人名称6'
+        # 投标人代码
+        'bidder_code': '投标人代码6'
+        # 是否联合体 1 是 0 否
+        'union_if': '0'
+        # 报名类型 1 资审报名 2 投标报名
+        'enroll_type': '2'
+        # 报名确认结果 1 通过 0 不通过
+        'enroll_result': '1'
+      - # 投标人名称
+        'bidder_name': '投标人名称7'
+        # 投标人代码
+        'bidder_code': '投标人代码7'
+        # 是否联合体 1 是 0 否
+        'union_if': '1'
+        # 报名类型 1 资审报名 2 投标报名
+        'enroll_type': '2'
+        # 报名确认结果 1 通过 0 不通过
+        'enroll_result': '0'
+
+  dic_ce_doc_download:
+    - - # 投标人名称
+        'bidder_name': '投标人名称1'
+        # 投标人代码
+        'bidder_code': '投标人代码1'
+        # 下载（获取）文件类型 1 资审文件 2 招标文件
+        'doc_type': '2'
+        # 下载文件IP/获取文件地点
+        'download_ip': '下载文件IP/获取文件地点1'
+      - # 投标人名称
+        'bidder_name': '投标人名称2'
+        # 投标人代码
+        'bidder_code': '投标人代码2'
+        # 下载（获取）文件类型 1 资审文件 2 招标文件
+        'doc_type': '2'
+        # 下载文件IP/获取文件地点
+        'download_ip': '下载文件IP/获取文件地点2'
+      - # 投标人名称
+        'bidder_name': '投标人名称3'
+        # 投标人代码
+        'bidder_code': '投标人代码3'
+        # 下载（获取）文件类型 1 资审文件 2 招标文件
+        'doc_type': '2'
+        # 下载文件IP/获取文件地点
+        'download_ip': '下载文件IP/获取文件地点3'
+      - # 投标人名称
+        'bidder_name': '投标人名称4'
+        # 投标人代码
+        'bidder_code': '投标人代码4'
+        # 下载（获取）文件类型 1 资审文件 2 招标文件
+        'doc_type': '2'
+        # 下载文件IP/获取文件地点
+        'download_ip': '下载文件IP/获取文件地点4'
+      - # 投标人名称
+        'bidder_name': '投标人名称5'
+        # 投标人代码
+        'bidder_code': '投标人代码5'
+        # 下载（获取）文件类型 1 资审文件 2 招标文件
+        'doc_type': '2'
+        # 下载文件IP/获取文件地点
+        'download_ip': '下载文件IP/获取文件地点5'
+    - - # 投标人名称
+        'bidder_name': '投标人名称1'
+        # 投标人代码
+        'bidder_code': '投标人代码1'
+        # 下载（获取）文件类型 1 资审文件 2 招标文件
+        'doc_type': '2'
+        # 下载文件IP/获取文件地点
+        'download_ip': '下载文件IP/获取文件地点1'
+      - # 投标人名称
+        'bidder_name': '投标人名称2'
+        # 投标人代码
+        'bidder_code': '投标人代码2'
+        # 下载（获取）文件类型 1 资审文件 2 招标文件
+        'doc_type': '2'
+        # 下载文件IP/获取文件地点
+        'download_ip': '下载文件IP/获取文件地点2'
+      - # 投标人名称
+        'bidder_name': '投标人名称3'
+        # 投标人代码
+        'bidder_code': '投标人代码3'
+        # 下载（获取）文件类型 1 资审文件 2 招标文件
+        'doc_type': '2'
+        # 下载文件IP/获取文件地点
+        'download_ip': '下载文件IP/获取文件地点3'
+      - # 投标人名称
+        'bidder_name': '投标人名称4'
+        # 投标人代码
+        'bidder_code': '投标人代码4'
+        # 下载（获取）文件类型 1 资审文件 2 招标文件
+        'doc_type': '2'
+        # 下载文件IP/获取文件地点
+        'download_ip': '下载文件IP/获取文件地点4'
+      - # 投标人名称
+        'bidder_name': '投标人名称5'
+        # 投标人代码
+        'bidder_code': '投标人代码5'
+        # 下载（获取）文件类型 1 资审文件 2 招标文件
+        'doc_type': '2'
+        # 下载文件IP/获取文件地点
+        'download_ip': '下载文件IP/获取文件地点5'
+      - # 投标人名称
+        'bidder_name': '投标人名称6'
+        # 投标人代码
+        'bidder_code': '投标人代码6'
+        # 下载（获取）文件类型 1 资审文件 2 招标文件
+        'doc_type': '2'
+        # 下载文件IP/获取文件地点
+        'download_ip': '下载文件IP/获取文件地点6'
+      - # 投标人名称
+        'bidder_name': '投标人名称7'
+        # 投标人代码
+        'bidder_code': '投标人代码7'
+        # 下载（获取）文件类型 1 资审文件 2 招标文件
+        'doc_type': '2'
+        # 下载文件IP/获取文件地点
+        'download_ip': '下载文件IP/获取文件地点7'
+  dic_ce_bid_doc_refer:
+    - - # 投标人名称
+        'bidder_name': '投标人名称1'
+        # 投标人代码
+        'bidder_code': '投标人代码1'
+        # 递交文件类型 1 资审申请文件 2 投标文件
+        'bid_doc_type': '2'
+        # 递交方式 1 现场递交 2 系统上传
+        'bid_doc_refer_method': '1'
+      - # 投标人名称
+        'bidder_name': '投标人名称2'
+        # 投标人代码
+        'bidder_code': '投标人代码2'
+        # 递交文件类型 1 资审申请文件 2 投标文件
+        'bid_doc_type': '2'
+        # 递交方式 1 现场递交 2 系统上传
+        'bid_doc_refer_method': '1'
+      - # 投标人名称
+        'bidder_name': '投标人名称3'
+        # 投标人代码
+        'bidder_code': '投标人代码3'
+        # 递交文件类型 1 资审申请文件 2 投标文件
+        'bid_doc_type': '2'
+        # 递交方式 1 现场递交 2 系统上传
+        'bid_doc_refer_method': '1'
+      - # 投标人名称
+        'bidder_name': '投标人名称4'
+        # 投标人代码
+        'bidder_code': '投标人代码4'
+        # 递交文件类型 1 资审申请文件 2 投标文件
+        'bid_doc_type': '2'
+        # 递交方式 1 现场递交 2 系统上传
+        'bid_doc_refer_method': '1'
+      - # 投标人名称
+        'bidder_name': '投标人名称5'
+        # 投标人代码
+        'bidder_code': '投标人代码5'
+        # 递交文件类型 1 资审申请文件 2 投标文件
+        'bid_doc_type': '2'
+        # 递交方式 1 现场递交 2 系统上传
+        'bid_doc_refer_method': '1'
+    - - # 投标人名称
+        'bidder_name': '投标人名称1'
+        # 投标人代码
+        'bidder_code': '投标人代码1'
+        # 递交文件类型 1 资审申请文件 2 投标文件
+        'bid_doc_type': '2'
+        # 递交方式 1 现场递交 2 系统上传
+        'bid_doc_refer_method': '1'
+      - # 投标人名称
+        'bidder_name': '投标人名称2'
+        # 投标人代码
+        'bidder_code': '投标人代码2'
+        # 递交文件类型 1 资审申请文件 2 投标文件
+        'bid_doc_type': '2'
+        # 递交方式 1 现场递交 2 系统上传
+        'bid_doc_refer_method': '1'
+      - # 投标人名称
+        'bidder_name': '投标人名称3'
+        # 投标人代码
+        'bidder_code': '投标人代码3'
+        # 递交文件类型 1 资审申请文件 2 投标文件
+        'bid_doc_type': '2'
+        # 递交方式 1 现场递交 2 系统上传
+        'bid_doc_refer_method': '1'
+      - # 投标人名称
+        'bidder_name': '投标人名称4'
+        # 投标人代码
+        'bidder_code': '投标人代码4'
+        # 递交文件类型 1 资审申请文件 2 投标文件
+        'bid_doc_type': '2'
+        # 递交方式 1 现场递交 2 系统上传
+        'bid_doc_refer_method': '1'
+      - # 投标人名称
+        'bidder_name': '投标人名称5'
+        # 投标人代码
+        'bidder_code': '投标人代码5'
+        # 递交文件类型 1 资审申请文件 2 投标文件
+        'bid_doc_type': '2'
+        # 递交方式 1 现场递交 2 系统上传
+        'bid_doc_refer_method': '1'
+      - # 投标人名称
+        'bidder_name': '投标人名称6'
+        # 投标人代码
+        'bidder_code': '投标人代码6'
+        # 递交文件类型 1 资审申请文件 2 投标文件
+        'bid_doc_type': '2'
+        # 递交方式 1 现场递交 2 系统上传
+        'bid_doc_refer_method': '1'
+      - # 投标人名称
+        'bidder_name': '投标人名称7'
+        # 投标人代码
+        'bidder_code': '投标人代码7'
+        # 递交文件类型 1 资审申请文件 2 投标文件
+        'bid_doc_type': '2'
+        # 递交方式 1 现场递交 2 系统上传
+        'bid_doc_refer_method': '1'
+
+  dic_ce_union_member:
+    - - # 联合体成员名称
+        'union_member_name': '联合体成员名称1'
+        # 联合体成员代码
+        'union_member_code': '联合体成员代码1'
+        # 是否联合体牵头人 1 是 0 否
+        'leader_if': '1'
+      - # 联合体成员名称
+        'union_member_name': '联合体成员名称2'
+        # 联合体成员代码
+        'union_member_code': '联合体成员代码2'
+        # 是否联合体牵头人 1 是 0 否
+        'leader_if': '0'
+    - - # 联合体成员名称
+        'union_member_name': '联合体成员名称1'
+        # 联合体成员代码
+        'union_member_code': '联合体成员代码1'
+        # 是否联合体牵头人 1 是 0 否
+        'leader_if': '1'
+      - # 联合体成员名称
+        'union_member_name': '联合体成员名称2'
+        # 联合体成员代码
+        'union_member_code': '联合体成员代码2'
+        # 是否联合体牵头人 1 是 0 否
+        'leader_if': '0'
+  dic_ce_bid_open_record:
+    - # 开标记录标题
+      'bid_open_title': '开标标段1记录标题1'
+      # 开标记录内容
+      'bid_open_content': '开标标段1记录内容1'
+      # 开标方式 1 现场开标 2 远程开标 3 线下开标
+      'bid_open_type': '1'
+      # 开标结果 1 成功 0 失败
+      'bid_open_result': '1'
+    - # 开标记录标题
+      'bid_open_title': '开标标段2记录标题1'
+      # 开标记录内容
+      'bid_open_content': '开标标段2记录内容1'
+      # 开标方式 1 现场开标 2 远程开标 3 线下开标
+      'bid_open_type': '1'
+      # 开标结果 1 成功 0 失败
+      'bid_open_result': '0'
+
+  dic_ce_bid_open_item:
+    - - # 投标人名称
+        'bidder_name': '投标人名称1'
+        # 投标人代码
+        'bidder_code': '投标人代码1'
+        # 是否联合体 1 是 0 否
+        'union_if': '0'
+        # 投标人项目负责人
+        'bidder_manager': '投标人项目负责人1'
+        # 投标人项目负责人身份证号
+        'bidder_manager_id_card_num': '110101198001010001'
+      - # 投标人名称
+        'bidder_name': '投标人名称2'
+        # 投标人代码
+        'bidder_code': '投标人代码2'
+        # 是否联合体 1 是 0 否
+        'union_if': '0'
+        # 投标人项目负责人
+        'bidder_manager': '投标人项目负责人2'
+        # 投标人项目负责人身份证号
+        'bidder_manager_id_card_num': '110101198001010002'
+      - # 投标人名称
+        'bidder_name': '投标人名称3'
+        # 投标人代码
+        'bidder_code': '投标人代码3'
+        # 是否联合体 1 是 0 否
+        'union_if': '0'
+        # 投标人项目负责人
+        'bidder_manager': '投标人项目负责人3'
+        # 投标人项目负责人身份证号
+        'bidder_manager_id_card_num': '110101198001010003'
+      - # 投标人名称
+        'bidder_name': '投标人名称4'
+        # 投标人代码
+        'bidder_code': '投标人代码4'
+        # 是否联合体 1 是 0 否
+        'union_if': '0'
+        # 投标人项目负责人
+        'bidder_manager': '投标人项目负责人4'
+        # 投标人项目负责人身份证号
+        'bidder_manager_id_card_num': '110101198001010004'
+      - # 投标人名称
+        'bidder_name': '投标人名称5'
+        # 投标人代码
+        'bidder_code': '投标人代码5'
+        # 是否联合体 1 是 0 否
+        'union_if': '0'
+        # 投标人项目负责人
+        'bidder_manager': '投标人项目负责人5'
+        # 投标人项目负责人身份证号
+        'bidder_manager_id_card_num': '110101198001010005'
+    - - # 投标人名称
+        'bidder_name': '投标人名称1'
+        # 投标人代码
+        'bidder_code': '投标人代码1'
+        # 是否联合体 1 是 0 否
+        'union_if': '0'
+        # 投标人项目负责人
+        'bidder_manager': '投标人项目负责人1'
+        # 投标人项目负责人身份证号
+        'bidder_manager_id_card_num': '110101198001010001'
+      - # 投标人名称
+        'bidder_name': '投标人名称2'
+        # 投标人代码
+        'bidder_code': '投标人代码2'
+        # 是否联合体 1 是 0 否
+        'union_if': '0'
+        # 投标人项目负责人
+        'bidder_manager': '投标人项目负责人2'
+        # 投标人项目负责人身份证号
+        'bidder_manager_id_card_num': '110101198001010002'
+      - # 投标人名称
+        'bidder_name': '投标人名称3'
+        # 投标人代码
+        'bidder_code': '投标人代码3'
+        # 是否联合体 1 是 0 否
+        'union_if': '0'
+        # 投标人项目负责人
+        'bidder_manager': '投标人项目负责人3'
+        # 投标人项目负责人身份证号
+        'bidder_manager_id_card_num': '110101198001010003'
+      - # 投标人名称
+        'bidder_name': '投标人名称4'
+        # 投标人代码
+        'bidder_code': '投标人代码4'
+        # 是否联合体 1 是 0 否
+        'union_if': '0'
+        # 投标人项目负责人
+        'bidder_manager': '投标人项目负责人4'
+        # 投标人项目负责人身份证号
+        'bidder_manager_id_card_num': '110101198001010004'
+      - # 投标人名称
+        'bidder_name': '投标人名称5'
+        # 投标人代码
+        'bidder_code': '投标人代码5'
+        # 是否联合体 1 是 0 否
+        'union_if': '0'
+        # 投标人项目负责人
+        'bidder_manager': '投标人项目负责人5'
+        # 投标人项目负责人身份证号
+        'bidder_manager_id_card_num': '110101198001010005'
+      - # 投标人名称
+        'bidder_name': '投标人名称6'
+        # 投标人代码
+        'bidder_code': '投标人代码6'
+        # 是否联合体 1 是 0 否
+        'union_if': '0'
+        # 投标人项目负责人
+        'bidder_manager': '投标人项目负责人6'
+        # 投标人项目负责人身份证号
+        'bidder_manager_id_card_num': '110101198001010006'
+      - # 投标人名称
+        'bidder_name': '投标人名称7'
+        # 投标人代码
+        'bidder_code': '投标人代码7'
+        # 是否联合体 1 是 0 否
+        'union_if': '0'
+        # 投标人项目负责人
+        'bidder_manager': '投标人项目负责人7'
+        # 投标人项目负责人身份证号
+        'bidder_manager_id_card_num': '110101198001010007'
+
+  dic_ce_doc_char:
+    - - # 投标人名称
+        'bidder_name': '投标人名称1'
+        # 投标人代码
+        'bidder_code': '投标人代码1'
+        # 投标（报价）文件加密锁锁号
+        'encryption_lock': '文件加密锁锁号1'
+      - # 投标人名称
+        'bidder_name': '投标人名称2'
+        # 投标人代码
+        'bidder_code': '投标人代码2'
+        # 投标（报价）文件加密锁锁号
+        'encryption_lock': '文件加密锁锁号2'
+      - # 投标人名称
+        'bidder_name': '投标人名称3'
+        # 投标人代码
+        'bidder_code': '投标人代码3'
+        # 投标（报价）文件加密锁锁号
+        'encryption_lock': '文件加密锁锁号3'
+      - # 投标人名称
+        'bidder_name': '投标人名称4'
+        # 投标人代码
+        'bidder_code': '投标人代码4'
+        # 投标（报价）文件加密锁锁号
+        'encryption_lock': '文件加密锁锁号4'
+      - # 投标人名称
+        'bidder_name': '投标人名称5'
+        # 投标人代码
+        'bidder_code': '投标人代码5'
+        # 投标（报价）文件加密锁锁号
+        'encryption_lock': '文件加密锁锁号5'
+    - - # 投标人名称
+        'bidder_name': '投标人名称1'
+        # 投标人代码
+        'bidder_code': '投标人代码1'
+        # 投标（报价）文件加密锁锁号
+        'encryption_lock': '文件加密锁锁号1'
+      - # 投标人名称
+        'bidder_name': '投标人名称2'
+        # 投标人代码
+        'bidder_code': '投标人代码2'
+        # 投标（报价）文件加密锁锁号
+        'encryption_lock': '文件加密锁锁号2'
+      - # 投标人名称
+        'bidder_name': '投标人名称3'
+        # 投标人代码
+        'bidder_code': '投标人代码3'
+        # 投标（报价）文件加密锁锁号
+        'encryption_lock': '文件加密锁锁号3'
+      - # 投标人名称
+        'bidder_name': '投标人名称4'
+        # 投标人代码
+        'bidder_code': '投标人代码4'
+        # 投标（报价）文件加密锁锁号
+        'encryption_lock': '文件加密锁锁号4'
+      - # 投标人名称
+        'bidder_name': '投标人名称5'
+        # 投标人代码
+        'bidder_code': '投标人代码5'
+        # 投标（报价）文件加密锁锁号
+        'encryption_lock': '文件加密锁锁号5'
+      - # 投标人名称
+        'bidder_name': '投标人名称6'
+        # 投标人代码
+        'bidder_code': '投标人代码6'
+        # 投标（报价）文件加密锁锁号
+        'encryption_lock': '文件加密锁锁号6'
+      - # 投标人名称
+        'bidder_name': '投标人名称7'
+        # 投标人代码
+        'bidder_code': '投标人代码7'
+        # 投标（报价）文件加密锁锁号
+        'encryption_lock': '文件加密锁锁号7'
+
+  dic_eval_report:
+  - - # 评审轮次
+      'evaluation_num': 1
+      # 评标报告标题
+      'eval_report_title': '评标报告标题1'
+      # 评审方法 1 综合评审法 2 质量优先法 3 最低价法
+      'eval_method': '1'
+      # 评标结果 1 招标失败（流标） 2 重新招标 3 评审结果公示
+      'eval_result': '1'
+      # 评标性质 1 首次评审 2 重评
+      're_eval_type': '1'
+      # 重评次数
+      're_eval_num': 0
+    - # 评审轮次
+      'evaluation_num': 2
+      # 评标报告标题
+      'eval_report_title': '评标报告标题第二轮'
+      # 评审方法 1 综合评审法 2 质量优先法 3 最低价法
+      'eval_method': '1'
+      # 评标结果 1 招标失败（流标） 2 重新招标 3 评审结果公示
+      'eval_result': '3'
+      # 评标性质 1 首次评审 2 重评
+      're_eval_type': '2'
+      # 重评次数
+      're_eval_num': 1
+  - - # 评审轮次
+      'evaluation_num': 1
+      # 评标报告标题
+      'eval_report_title': '评标报告标题1'
+      # 评审方法 1 综合评审法 2 质量优先法 3 最低价法
+      'eval_method': '1'
+      # 评标结果 1 招标失败（流标） 2 重新招标 3 评审结果公示
+      'eval_result': '1'
+      # 评标性质 1 首次评审 2 重评
+      're_eval_type': '1'
+      # 重评次数
+      're_eval_num': 0
+    - # 评审轮次
+      'evaluation_num': 2
+      # 评标报告标题
+      'eval_report_title': '评标报告标题第二轮'
+      # 评审方法 1 综合评审法 2 质量优先法 3 最低价法
+      'eval_method': '1'
+      # 评标结果 1 招标失败（流标） 2 重新招标 3 评审结果公示
+      'eval_result': '1'
+      # 评标性质 1 首次评审 2 重评
+      're_eval_type': '2'
+      # 重评次数
+      're_eval_num': 1
+
+  dic_ce_judge_group:
+    - - # 评委姓名
+        'judge_name': '专家1'
+        # 评委身份证件号
+        'judge_id_card_num': '110101198001010001'
+        # 评委专业类别 1 物资技术  2 工程技术 3 服务技术  4 物资服务经济  5 工程经济 9 其他
+        'judge_pro_type': '2'
+        # 评委类别 1 专家 2 采购单位代表 3 采购代理人员 4 采购机构人员 9 其他
+        'judge_type': '1'
+        # 是否小组组长 1 是 0 否
+        'leader_if': '1'
+        # 专家工作单位
+        'expert_unit': '专家工作单位1'
+        # 专家工作单位代码
+        'expert_unit_code': '专家工作单位代码1'
+      - # 评委身份证件号
+        'judge_id_card_num': '110101198001010002'
+        # 评委姓名
+        'judge_name': '专家2'
+        # 评委专业类别 1 物资技术  2 工程技术 3 服务技术  4 物资服务经济  5 工程经济 9 其他
+        'judge_pro_type': '5'
+        # 评委类别 1 专家 2 采购单位代表 3 采购代理人员 4 采购机构人员 9 其他
+        'judge_type': '1'
+        # 是否小组组长 1 是 0 否
+        'leader_if': '0'
+        # 专家工作单位
+        'expert_unit': '专家工作单位2'
+        # 专家工作单位代码
+        'expert_unit_code': '专家工作单位代码2'
+      - # 评委身份证件号
+        'judge_id_card_num': '110101198001010003'
+        # 评委姓名
+        'judge_name': '专家3'
+        # 评委专业类别 1 物资技术  2 工程技术 3 服务技术  4 物资服务经济  5 工程经济 9 其他
+        'judge_pro_type': '2'
+        # 评委类别 1 专家 2 采购单位代表 3 采购代理人员 4 采购机构人员 9 其他
+        'judge_type': '1'
+        # 是否小组组长 1 是 0 否
+        'leader_if': '0'
+        # 专家工作单位
+        'expert_unit': '专家工作单位3'
+        # 专家工作单位代码
+        'expert_unit_code': '专家工作单位代码3'
+      - # 评委身份证件号
+        'judge_id_card_num': '110101198001010004'
+        # 评委姓名
+        'judge_name': '专家4'
+        # 评委专业类别 1 物资技术  2 工程技术 3 服务技术  4 物资服务经济  5 工程经济 9 其他
+        'judge_pro_type': '2'
+        # 评委类别 1 专家 2 采购单位代表 3 采购代理人员 4 采购机构人员 9 其他
+        'judge_type': '1'
+        # 是否小组组长 1 是 0 否
+        'leader_if': '0'
+        # 专家工作单位
+        'expert_unit': '专家工作单位4'
+        # 专家工作单位代码
+        'expert_unit_code': '专家工作单位代码4'
+      - # 评委身份证件号
+        'judge_id_card_num': '110101198001010005'
+        # 评委姓名
+        'judge_name': '专家5'
+        # 评委专业类别 1 物资技术  2 工程技术 3 服务技术  4 物资服务经济  5 工程经济 9 其他
+        'judge_pro_type': '2'
+        # 评委类别 1 专家 2 采购单位代表 3 采购代理人员 4 采购机构人员 9 其他
+        'judge_type': '1'
+        # 是否小组组长 1 是 0 否
+        'leader_if': '0'
+        # 专家工作单位
+        'expert_unit': '专家工作单位5'
+        # 专家工作单位代码
+        'expert_unit_code': '专家工作单位代码5'
+      - # 评委身份证件号
+        'judge_id_card_num': '110101198001010006'
+        # 评委姓名
+        'judge_name': '采购单位代表1'
+        # 评委专业类别 1 物资技术  2 工程技术 3 服务技术  4 物资服务经济  5 工程经济 9 其他
+        'judge_pro_type': '2'
+        # 评委类别 1 专家 2 采购单位代表 3 采购代理人员 4 采购机构人员 9 其他
+        'judge_type': '2'
+        # 是否小组组长 1 是 0 否
+        'leader_if': '0'
+        # 专家工作单位
+        'expert_unit': '采购单位代表1'
+        # 专家工作单位代码
+        'expert_unit_code': '采购单位代表代码1'
+    - - # 评委身份证件号
+        'judge_id_card_num': '110101198001010001'
+        # 评委姓名
+        'judge_name': '专家1'
+        # 评委专业类别 1 物资技术  2 工程技术 3 服务技术  4 物资服务经济  5 工程经济 9 其他
+        'judge_pro_type': '2'
+        # 评委类别 1 专家 2 采购单位代表 3 采购代理人员 4 采购机构人员 9 其他
+        'judge_type': '1'
+        # 是否小组组长 1 是 0 否
+        'leader_if': '1'
+        # 专家工作单位
+        'expert_unit': '专家工作单位1'
+        # 专家工作单位代码
+        'expert_unit_code': '专家工作单位代码1'
+      - # 评委身份证件号
+        'judge_id_card_num': '110101198001010002'
+        # 评委姓名
+        'judge_name': '专家2'
+        # 评委专业类别 1 物资技术  2 工程技术 3 服务技术  4 物资服务经济  5 工程经济 9 其他
+        'judge_pro_type': '5'
+        # 评委类别 1 专家 2 采购单位代表 3 采购代理人员 4 采购机构人员 9 其他
+        'judge_type': '1'
+        # 是否小组组长 1 是 0 否
+        'leader_if': '0'
+        # 专家工作单位
+        'expert_unit': '专家工作单位2'
+        # 专家工作单位代码
+        'expert_unit_code': '专家工作单位代码2'
+      - # 评委身份证件号
+        'judge_id_card_num': '110101198001010003'
+        # 评委姓名
+        'judge_name': '专家3'
+        # 评委专业类别 1 物资技术  2 工程技术 3 服务技术  4 物资服务经济  5 工程经济 9 其他
+        'judge_pro_type': '2'
+        # 评委类别 1 专家 2 采购单位代表 3 采购代理人员 4 采购机构人员 9 其他
+        'judge_type': '1'
+        # 是否小组组长 1 是 0 否
+        'leader_if': '0'
+        # 专家工作单位
+        'expert_unit': '专家工作单位3'
+        # 专家工作单位代码
+        'expert_unit_code': '专家工作单位代码3'
+      - # 评委身份证件号
+        'judge_id_card_num': '110101198001010004'
+        # 评委姓名
+        'judge_name': '专家4'
+        # 评委专业类别 1 物资技术  2 工程技术 3 服务技术  4 物资服务经济  5 工程经济 9 其他
+        'judge_pro_type': '2'
+        # 评委类别 1 专家 2 采购单位代表 3 采购代理人员 4 采购机构人员 9 其他
+        'judge_type': '1'
+        # 是否小组组长 1 是 0 否
+        'leader_if': '0'
+        # 专家工作单位
+        'expert_unit': '专家工作单位4'
+        # 专家工作单位代码
+        'expert_unit_code': '专家工作单位代码4'
+      - # 评委身份证件号
+        'judge_id_card_num': '110101198001010005'
+        # 评委姓名
+        'judge_name': '专家5'
+        # 评委专业类别 1 物资技术  2 工程技术 3 服务技术  4 物资服务经济  5 工程经济 9 其他
+        'judge_pro_type': '2'
+        # 评委类别 1 专家 2 采购单位代表 3 采购代理人员 4 采购机构人员 9 其他
+        'judge_type': '1'
+        # 是否小组组长 1 是 0 否
+        'leader_if': '0'
+        # 专家工作单位
+        'expert_unit': '专家工作单位5'
+        # 专家工作单位代码
+        'expert_unit_code': '专家工作单位代码5'
+      - # 评委身份证件号
+        'judge_id_card_num': '110101198001010006'
+        # 评委姓名
+        'judge_name': '采购单位代表1'
+        # 评委专业类别 1 物资技术  2 工程技术 3 服务技术  4 物资服务经济  5 工程经济 9 其他
+        'judge_pro_type': '2'
+        # 评委类别 1 专家 2 采购单位代表 3 采购代理人员 4 采购机构人员 9 其他
+        'judge_type': '2'
+        # 是否小组组长 1 是 0 否
+        'leader_if': '0'
+        # 专家工作单位
+        'expert_unit': '采购单位代表1'
+        # 专家工作单位代码
+        'expert_unit_code': '采购单位代表代码1'
+
+  dic_ce_clause_score:
+    -
+      -
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 1
+
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 2
+      -
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 1
+
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 2
+      -
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 1
+
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 2
+    -
+      -
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 1
+
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 2
+      -
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 1
+
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 2
+      -
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 1
+
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 46
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 56
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该评审因素的打分
+          'clause_score': 87
+          # 评审轮次
+          'evaluation_num': 2
+
+  dic_ce_step_score:
+    -
+      -
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 3
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 4
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 5
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 6
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 7
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 8
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 9
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 10
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 11
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 12
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 13
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 14
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 15
+
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 3
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 4
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 5
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 6
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 7
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 8
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 9
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 10
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 11
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 12
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 13
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 14
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 15
+      -
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 3
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 4
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 5
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 6
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 7
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 8
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 9
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 10
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 11
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 12
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 13
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 14
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 15
+
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 3
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 4
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 5
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 6
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 7
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 8
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 9
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 10
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 11
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 12
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 13
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 14
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 15
+      -
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 3
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 4
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 5
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 6
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 7
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 8
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 9
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 10
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 11
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 12
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 13
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 14
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 15
+
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 3
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 4
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 5
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 6
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 7
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 8
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 9
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 10
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 11
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 12
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 13
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 14
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 15
+    -
+      -
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 3
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 4
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 5
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 6
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 7
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 8
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 9
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 10
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 11
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 12
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 13
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 14
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 15
+
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 3
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 4
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 5
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 6
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 7
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 8
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 9
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 10
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 11
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 12
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 13
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 14
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 15
+      -
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 3
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 4
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 5
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 6
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 7
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 8
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 9
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 10
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 11
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 12
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 13
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 14
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 15
+
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 3
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 4
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 5
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 6
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 7
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 8
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 9
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 10
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 11
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 12
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 13
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 14
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 15
+      -
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 3
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 4
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 5
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 6
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 7
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 8
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 9
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 10
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 11
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 12
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 13
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 14
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 1
+          # 排序
+          'sequence_num': 15
+
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 3
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 4
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家1'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 5
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 6
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 7
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 8
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 9
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家2'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 10
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 11
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 12
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 13
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 14
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评委姓名
+          'judge_name': '专家3'
+          # 专家对该供应商该步骤的打分
+          'step_score': 68
+          # 评审轮次
+          'evaluation_num': 2
+          # 排序
+          'sequence_num': 15
+
+  dic_ce_step_total_score:
+    - - - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 各专家汇总得分
+          'step_total_score': 73
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 各专家汇总得分
+          'step_total_score': 76
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 各专家汇总得分
+          'step_total_score': 78
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 各专家汇总得分
+          'step_total_score': 63
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 各专家汇总得分
+          'step_total_score': 65
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称6'
+          # 投标人代码
+          'bidder_code': '投标人代码6'
+          # 各专家汇总得分
+          'step_total_score': 66
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称7'
+          # 投标人代码
+          'bidder_code': '投标人代码7'
+          # 各专家汇总得分
+          'step_total_score': 73
+          # 评审轮次
+          'evaluation_num': 2
+      - - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 各专家汇总得分
+          'step_total_score': 73
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 各专家汇总得分
+          'step_total_score': 76
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 各专家汇总得分
+          'step_total_score': 78
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 各专家汇总得分
+          'step_total_score': 63
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 各专家汇总得分
+          'step_total_score': 65
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称6'
+          # 投标人代码
+          'bidder_code': '投标人代码6'
+          # 各专家汇总得分
+          'step_total_score': 66
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称7'
+          # 投标人代码
+          'bidder_code': '投标人代码7'
+          # 各专家汇总得分
+          'step_total_score': 73
+          # 评审轮次
+          'evaluation_num': 2
+      - - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 各专家汇总得分
+          'step_total_score': 73
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 各专家汇总得分
+          'step_total_score': 76
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 各专家汇总得分
+          'step_total_score': 78
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 各专家汇总得分
+          'step_total_score': 63
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 各专家汇总得分
+          'step_total_score': 65
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称6'
+          # 投标人代码
+          'bidder_code': '投标人代码6'
+          # 各专家汇总得分
+          'step_total_score': 66
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称7'
+          # 投标人代码
+          'bidder_code': '投标人代码7'
+          # 各专家汇总得分
+          'step_total_score': 73
+          # 评审轮次
+          'evaluation_num': 2
+    - - - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 各专家汇总得分
+          'step_total_score': 73
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 各专家汇总得分
+          'step_total_score': 76
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 各专家汇总得分
+          'step_total_score': 78
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 各专家汇总得分
+          'step_total_score': 63
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 各专家汇总得分
+          'step_total_score': 65
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称6'
+          # 投标人代码
+          'bidder_code': '投标人代码6'
+          # 各专家汇总得分
+          'step_total_score': 66
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称7'
+          # 投标人代码
+          'bidder_code': '投标人代码7'
+          # 各专家汇总得分
+          'step_total_score': 73
+          # 评审轮次
+          'evaluation_num': 2
+      - - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 各专家汇总得分
+          'step_total_score': 73
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 各专家汇总得分
+          'step_total_score': 76
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 各专家汇总得分
+          'step_total_score': 78
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 各专家汇总得分
+          'step_total_score': 63
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 各专家汇总得分
+          'step_total_score': 65
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称6'
+          # 投标人代码
+          'bidder_code': '投标人代码6'
+          # 各专家汇总得分
+          'step_total_score': 66
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称7'
+          # 投标人代码
+          'bidder_code': '投标人代码7'
+          # 各专家汇总得分
+          'step_total_score': 73
+          # 评审轮次
+          'evaluation_num': 2
+      - - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 各专家汇总得分
+          'step_total_score': 73
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 各专家汇总得分
+          'step_total_score': 76
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 各专家汇总得分
+          'step_total_score': 78
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 各专家汇总得分
+          'step_total_score': 63
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 各专家汇总得分
+          'step_total_score': 65
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称6'
+          # 投标人代码
+          'bidder_code': '投标人代码6'
+          # 各专家汇总得分
+          'step_total_score': 66
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称7'
+          # 投标人代码
+          'bidder_code': '投标人代码7'
+          # 各专家汇总得分
+          'step_total_score': 73
+          # 评审轮次
+          'evaluation_num': 2
+
+  dic_ce_bidder_score:
+    -
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评审结果得分汇总
+          'total_score': 80
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评审结果得分汇总
+          'total_score': 76
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评审结果得分汇总
+          'total_score': 73
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评审结果得分汇总
+          'total_score': 71
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评审结果得分汇总
+          'total_score': 61
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称6'
+          # 投标人代码
+          'bidder_code': '投标人代码6'
+          # 评审结果得分汇总
+          'total_score': 66
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称7'
+          # 投标人代码
+          'bidder_code': '投标人代码7'
+          # 评审结果得分汇总
+          'total_score': 86
+          # 评审轮次
+          'evaluation_num': 1
+        - # 投标人名称
+          'bidder_name': '投标人名称1'
+          # 投标人代码
+          'bidder_code': '投标人代码1'
+          # 评审结果得分汇总
+          'total_score': 80
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称2'
+          # 投标人代码
+          'bidder_code': '投标人代码2'
+          # 评审结果得分汇总
+          'total_score': 76
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称3'
+          # 投标人代码
+          'bidder_code': '投标人代码3'
+          # 评审结果得分汇总
+          'total_score': 73
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称4'
+          # 投标人代码
+          'bidder_code': '投标人代码4'
+          # 评审结果得分汇总
+          'total_score': 71
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称5'
+          # 投标人代码
+          'bidder_code': '投标人代码5'
+          # 评审结果得分汇总
+          'total_score': 61
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称6'
+          # 投标人代码
+          'bidder_code': '投标人代码6'
+          # 评审结果得分汇总
+          'total_score': 66
+          # 评审轮次
+          'evaluation_num': 2
+        - # 投标人名称
+          'bidder_name': '投标人名称7'
+          # 投标人代码
+          'bidder_code': '投标人代码7'
+          # 评审结果得分汇总
+          'total_score': 86
+          # 评审轮次
+          'evaluation_num': 2
+    -
+      - # 投标人名称
+        'bidder_name': '投标人名称1'
+        # 投标人代码
+        'bidder_code': '投标人代码1'
+        # 评审结果得分汇总
+        'total_score': 80
+        # 评审轮次
+        'evaluation_num': 1
+      - # 投标人名称
+        'bidder_name': '投标人名称2'
+        # 投标人代码
+        'bidder_code': '投标人代码2'
+        # 评审结果得分汇总
+        'total_score': 76
+        # 评审轮次
+        'evaluation_num': 1
+      - # 投标人名称
+        'bidder_name': '投标人名称3'
+        # 投标人代码
+        'bidder_code': '投标人代码3'
+        # 评审结果得分汇总
+        'total_score': 73
+        # 评审轮次
+        'evaluation_num': 1
+      - # 投标人名称
+        'bidder_name': '投标人名称4'
+        # 投标人代码
+        'bidder_code': '投标人代码4'
+        # 评审结果得分汇总
+        'total_score': 71
+        # 评审轮次
+        'evaluation_num': 1
+      - # 投标人名称
+        'bidder_name': '投标人名称5'
+        # 投标人代码
+        'bidder_code': '投标人代码5'
+        # 评审结果得分汇总
+        'total_score': 61
+        # 评审轮次
+        'evaluation_num': 1
+      - # 投标人名称
+        'bidder_name': '投标人名称6'
+        # 投标人代码
+        'bidder_code': '投标人代码6'
+        # 评审结果得分汇总
+        'total_score': 66
+        # 评审轮次
+        'evaluation_num': 1
+      - # 投标人名称
+        'bidder_name': '投标人名称7'
+        # 投标人代码
+        'bidder_code': '投标人代码7'
+        # 评审结果得分汇总
+        'total_score': 86
+        # 评审轮次
+        'evaluation_num': 1
+      - # 投标人名称
+        'bidder_name': '投标人名称1'
+        # 投标人代码
+        'bidder_code': '投标人代码1'
+        # 评审结果得分汇总
+        'total_score': 80
+        # 评审轮次
+        'evaluation_num': 2
+      - # 投标人名称
+        'bidder_name': '投标人名称2'
+        # 投标人代码
+        'bidder_code': '投标人代码2'
+        # 评审结果得分汇总
+        'total_score': 76
+        # 评审轮次
+        'evaluation_num': 2
+      - # 投标人名称
+        'bidder_name': '投标人名称3'
+        # 投标人代码
+        'bidder_code': '投标人代码3'
+        # 评审结果得分汇总
+        'total_score': 73
+        # 评审轮次
+        'evaluation_num': 2
+      - # 投标人名称
+        'bidder_name': '投标人名称4'
+        # 投标人代码
+        'bidder_code': '投标人代码4'
+        # 评审结果得分汇总
+        'total_score': 71
+        # 评审轮次
+        'evaluation_num': 2
+      - # 投标人名称
+        'bidder_name': '投标人名称5'
+        # 投标人代码
+        'bidder_code': '投标人代码5'
+        # 评审结果得分汇总
+        'total_score': 61
+        # 评审轮次
+        'evaluation_num': 2
+      - # 投标人名称
+        'bidder_name': '投标人名称6'
+        # 投标人代码
+        'bidder_code': '投标人代码6'
+        # 评审结果得分汇总
+        'total_score': 66
+        # 评审轮次
+        'evaluation_num': 2
+      - # 投标人名称
+        'bidder_name': '投标人名称7'
+        # 投标人代码
+        'bidder_code': '投标人代码7'
+        # 评审结果得分汇总
+        'total_score': 86
+        # 评审轮次
+        'evaluation_num': 2
+
+
+
+  dic_ce_candidate:
+    -
+      - # 中标候选人名称
+        'candidate_name': '投标人名称1'
+        # 中标候选人代码
+        'candidate_code': '投标人代码1'
+        # 评审轮次
+        'evaluation_num': 1
+        # 候选人是否区分排名 1 是 0 否
+        'candidate_order_if': '1'
+        # 中标候选人排名
+        'order': 1
+      - # 中标候选人名称
+        'candidate_name': '投标人名称1'
+        # 中标候选人代码
+        'candidate_code': '投标人代码1'
+        # 评审轮次
+        'evaluation_num': 2
+        # 候选人是否区分排名 1 是 0 否
+        'candidate_order_if': '1'
+        # 中标候选人排名
+        'order': 1
+      - # 中标候选人名称
+        'candidate_name': '投标人名称2'
+        # 中标候选人代码
+        'candidate_code': '投标人代码2'
+        # 评审轮次
+        'evaluation_num': 1
+        # 候选人是否区分排名 1 是 0 否
+        'candidate_order_if': '1'
+        # 中标候选人排名
+        'order': 2
+      - # 中标候选人名称
+        'candidate_name': '投标人名称2'
+        # 中标候选人代码
+        'candidate_code': '投标人代码2'
+        # 评审轮次
+        'evaluation_num': 2
+        # 候选人是否区分排名 1 是 0 否
+        'candidate_order_if': '1'
+        # 中标候选人排名
+        'order': 2
+    -
+      - # 中标候选人名称
+        'candidate_name': '投标人名称1'
+        # 中标候选人代码
+        'candidate_code': '投标人代码1'
+        # 评审轮次
+        'evaluation_num': 1
+        # 候选人是否区分排名 1 是 0 否
+        'candidate_order_if': '1'
+        # 中标候选人排名
+        'order': 1
+      - # 中标候选人名称
+        'candidate_name': '投标人名称1'
+        # 中标候选人代码
+        'candidate_code': '投标人代码1'
+        # 评审轮次
+        'evaluation_num': 2
+        # 候选人是否区分排名 1 是 0 否
+        'candidate_order_if': '1'
+        # 中标候选人排名
+        'order': 1
+      - # 中标候选人名称
+        'candidate_name': '投标人名称2'
+        # 中标候选人代码
+        'candidate_code': '投标人代码2'
+        # 评审轮次
+        'evaluation_num': 1
+        # 候选人是否区分排名 1 是 0 否
+        'candidate_order_if': '1'
+        # 中标候选人排名
+        'order': 2
+      - # 中标候选人名称
+        'candidate_name': '投标人名称2'
+        # 中标候选人代码
+        'candidate_code': '投标人代码2'
+        # 评审轮次
+        'evaluation_num': 2
+        # 候选人是否区分排名 1 是 0 否
+        'candidate_order_if': '1'
+        # 中标候选人排名
+        'order': 2
+
+
+  dic_ce_candidate_notice:
+    - # 公示标题
+      'candidate_notice_title': '公示标题1'
+      # 公示性质 1 首次公示 2 更正公示 3 重发公示
+      'candidate_notice_nature': '1'
+      # 公示发布范围 1 内网公示 2 内外网公示
+      'candidate_notice_range': '2'
+      # 公示内容
+      'content': '公示内容1'
+
+  dic_ce_candidate_notice_item:
+    -
+      - # 中标候选人名称
+        'candidate_name': '投标人名称1'
+        # 中标候选人代码
+        'candidate_code': '投标人代码1'
+        # 金额形式投标价
+        'bid_price': 200000
+        # 中标候选人排名
+        'order': 1
+      - # 中标候选人名称
+        'candidate_name': '投标人名称2'
+        # 中标候选人代码
+        'candidate_code': '投标人代码2'
+        # 金额形式投标价
+        'bid_price': 300000
+        # 中标候选人排名
+        'order': 2
+    -
+      - # 中标候选人名称
+        'candidate_name': '投标人名称1'
+        # 中标候选人代码
+        'candidate_code': '投标人代码1'
+        # 金额形式投标价
+        'bid_price': 200000
+        # 中标候选人排名
+        'order': 1
+      - # 中标候选人名称
+        'candidate_name': '投标人名称2'
+        # 中标候选人代码
+        'candidate_code': '投标人代码2'
+        # 金额形式投标价
+        'bid_price': 300000
+        # 中标候选人排名
+        'order': 2
+
+  dic_ce_win_notice:
+    - # 公告标题
+      'win_notice_title': '公告标题1'
+      # 公告性质 1 首次 2 更正 3 重发
+      'win_notice_nature': '1'
+      # 公告发布范围 1 内网发布 2 内外网发布
+      'win_notice_range': '1'
+      # 公告内容
+      'content': '公告内容1'
+
+  dic_ce_win_notice_item:
+    - - # 中标人名称
+        'win_bidder_name': '投标人名称1'
+        # 中标人代码
+        'win_bidder_code': '投标人代码1'
+        # 金额形式中标价
+        'win_bid_price': 200000
+        # 排序
+        'order': 1
+      - # 中标人名称
+        'win_bidder_name': '投标人名称2'
+        # 中标人代码
+        'win_bidder_code': '投标人代码2'
+        # 金额形式中标价
+        'win_bid_price': 220000
+        # 排序
+        'order': 2
+    - - # 中标人名称
+        'win_bidder_name': '投标人名称1'
+        # 中标人代码
+        'win_bidder_code': '投标人代码1'
+        # 金额形式中标价
+        'win_bid_price': 200000
+        # 排序
+        'order': 1
+      - # 中标人名称
+        'win_bidder_name': '投标人名称2'
+        # 中标人代码
+        'win_bidder_code': '投标人代码2'
+        # 金额形式中标价
+        'win_bid_price': 220000
+        # 排序
+        'order': 2
+
+  dic_ce_failure_notice:
+    - # 公告标题
+      'failure_notice_title': '公告标题1'
+      # 公告发布范围 1 内网发布 2 内外网发布
+      'win_notice_range': '1'
+      # 公告内容
+      'content': '公告内容1'
+
+  dic_ce_failure_notice_item:
+    - - # 标段ID
+        'section_id': '公告标题1'
+        # 废标原因类型
+        'failure_reason_type': '1'
+        # 废标原因
+        'failure_reason': '废标原因1'
+      - # 标段ID
+        'section_id': '公告标题2'
+        # 废标原因类型
+        'failure_reason_type': '2'
+        # 废标原因
+        'failure_reason': '废标原因2'
+    - - # 标段ID
+        'section_id': '公告标题1'
+        # 废标原因类型
+        'failure_reason_type': '1'
+        # 废标原因
+        'failure_reason': '废标原因1'
+      - # 标段ID
+        'section_id': '公告标题2'
+        # 废标原因类型
+        'failure_reason_type': '2'
+        # 废标原因
+        'failure_reason': '废标原因2'
+
+  dic_ce_win_note:
+    - - # 通知书性质 1 首次 2 更正 3 重发
+        'note_nature': '1'
+        # 通知书类型 1 中标通知书 2 未中标通知书
+        'note_type': '1'
+        # 建设单位名称
+        'tenderer_name': '投标人名称1'
+        # 建设单位代码
+        'tenderer_code': '投标人代码1'
+        # 通知书接收人
+        'recipient_name': '投标人名称1'
+        # 通知书接收人代码
+        'recipient_code': '投标人代码1'
+      - # 通知书性质 1 首次 2 更正 3 重发
+        'note_nature': '2'
+        # 通知书类型 1 中标通知书 2 未中标通知书
+        'note_type': '1'
+        # 建设单位名称
+        'tenderer_name': '投标人名称1'
+        # 建设单位代码
+        'tenderer_code': '投标人代码1'
+        # 通知书接收人
+        'recipient_name': '投标人名称1'
+        # 通知书接收人代码
+        'recipient_code': '投标人代码1'
+      - # 通知书性质 1 首次 2 更正 3 重发
+        'note_nature': '1'
+        # 通知书类型 1 中标通知书 2 未中标通知书
+        'note_type': '1'
+        # 建设单位名称
+        'tenderer_name': '投标人名称2'
+        # 建设单位代码
+        'tenderer_code': '投标人代码2'
+        # 通知书接收人
+        'recipient_name': '投标人名称2'
+        # 通知书接收人代码
+        'recipient_code': '投标人代码2'
+    - - # 通知书性质 1 首次 2 更正 3 重发
+        'note_nature': '1'
+        # 通知书类型 1 中标通知书 2 未中标通知书
+        'note_type': '1'
+        # 建设单位名称
+        'tenderer_name': '投标人名称1'
+        # 建设单位代码
+        'tenderer_code': '投标人代码1'
+        # 通知书接收人
+        'recipient_name': '投标人名称1'
+        # 通知书接收人代码
+        'recipient_code': '投标人代码1'
+      - # 通知书性质 1 首次 2 更正 3 重发
+        'note_nature': '2'
+        # 通知书类型 1 中标通知书 2 未中标通知书
+        'note_type': '1'
+        # 建设单位名称
+        'tenderer_name': '投标人名称1'
+        # 建设单位代码
+        'tenderer_code': '投标人代码1'
+        # 通知书接收人
+        'recipient_name': '投标人名称1'
+        # 通知书接收人代码
+        'recipient_code': '投标人代码1'
+      - # 通知书性质 1 首次 2 更正 3 重发
+        'note_nature': '1'
+        # 通知书类型 1 中标通知书 2 未中标通知书
+        'note_type': '1'
+        # 建设单位名称
+        'tenderer_name': '投标人名称2'
+        # 建设单位代码
+        'tenderer_code': '投标人代码2'
+        # 通知书接收人
+        'recipient_name': '投标人名称2'
+        # 通知书接收人代码
+        'recipient_code': '投标人代码2'
