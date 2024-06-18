@@ -1,0 +1,192 @@
+  -
+     dbname:
+      - 'dc_20230719'
+     tablename:
+      - 'SU_SP_T_PURCHASE_PLAN_YEAR_NEW'
+      - 'purchase_plan_year_new'
+     key_value:
+      - {'data.yearProjectId': 'QHQYID20240507112726788'}
+
+  -
+     dbname:
+      - 'dc_20230719'
+     tablename:
+      - 'SU_SP_T_PURCHASE_PLAN_QUAR_NEW'
+      - 'purchase_plan_quar_new'
+     key_value:
+      - {'data.quarProjectId': 'QHQPID20240507112726544'}
+
+  -
+     dbname:
+      - 'dc_20230719'
+     tablename:
+      - 'SU_SP_T_PURCHASE_PLAN_APPROVAL'
+      - 'purchase_plan_approval'
+     key_value:
+      - {'data.planApprovalId': 'PLAID20240507112726639'}
+
+  -
+     dbname:
+      - 'dc_20230719'
+     tablename:
+      - 'SU_SP_T_CONSTRUCTION_PLAN_APPROVAL'
+      - 'construction_plan_approval'
+     key_value:
+      - {'data.constructionPlanId': 'CONPL_ID20240507112728883'}
+
+  -
+     dbname:
+      - 'dc_20230719'
+     tablename:
+      - 'SU_SP_T_CONSTRUCTION_PLAN_DETAIL_APPROVAL'
+      - 'construction_plan_detail_approval'
+     key_value:
+      - {'data.constructionPlanId': 'CONPL_ID20240507112728883'}
+
+  - dbname:
+      - 'dc_20230719'
+    tablename:
+      - 'SU_SD_T_PURCHASE_REQUIRE_COMPILATION_NEW'
+      - 'purchase_require_compilation_new'
+    key_value:
+      - {'data.requireId': 'REID20240507112728362'}
+
+  - dbname:
+      - 'dc_20230719'
+    tablename:
+      - 'SU_SD_T_PURCHASE_INTENTION_NOTICE_NEW'
+      - 'purchase_intention_notice_new'
+    key_value:
+      - {'data.intentionNoticeId': 'INTD20240507112729770'}
+
+  - dbname:
+      - 'dc_20230719'
+    tablename:
+      - 'SU_SD_T_PURCHASE_INTENTION_DETAIL_NEW'
+      - 'purchase_intention_detail_new'
+    key_value:
+      - {'data.intentionNoticeDetailId': 'IN_NO_DT_ID20240507112731006'}
+
+  - dbname:
+      - 'dc_20230719'
+    tablename:
+      - 'SU_SD_T_PURCHASE_INTENTION_ADVICE'
+      - 'purchase_intention_advice'
+    key_value:
+      - {'data.intentionAdviceId': 'IN_ADV_ID20240507112732049'}
+
+  - dbname:
+      - 'dc_20230719'
+    tablename:
+      - 'SU_SD_T_PURCHASE_REQUIRE_SURVEY_NEW'
+      - 'purchase_require_survey_new'
+    key_value:
+      - {'data.requireSurveyId': 'RSID1715052452'}
+
+  - dbname:
+      - 'dc_20230719'
+    tablename:
+      - 'SU_SD_T_PURCHASE_SURVEY_DETAIL_NEW'
+      - 'purchase_survey_detail_new'
+    key_value:
+      - {'data.reqresearchDetailId': 'RDID1715052452'}
+
+  - dbname:
+      - 'dc_20230719'
+    tablename:
+      - 'SU_SD_T_PURCHASE_DEMONSTRATION_NEW'
+      - 'purchase_demonstration_new'
+    key_value:
+      - {'data.demonstrationId': 'DEMID20240507112732825'}
+
+  - dbname:
+      - 'dc_20230719'
+    tablename:
+      - 'SU_SD_T_PURCHASE_DEMONSTRATION_DETAIL_NEW'
+      - 'purchase_demonstration_detail_new'
+    key_value:
+      - {'data.demonstrationDetailId': 'DEMDID20240507112733843'}
+
+  -
+     dbname:
+      - 'dc_20230719'
+     tablename:
+      - 'SU_SD_T_PURCHASE_REQUIRE_PROJECT_NEW'
+      - 'purchase_require_project_new'
+     key_value:
+      - {'data.requireId': 'REID20240507112728362'}
+
+  -
+     dbname:
+      - 'dc_20230719'
+     tablename:
+      - 'SU_SD_T_PURCHASE_REQUIRE_SECTION_NEW'
+      - 'purchase_require_section_new'
+     key_value:
+      - {'data.requireSectionId': 'RS_ID20240507112734274'}
+
+  -
+     dbname:
+      - 'dc_20230719'
+     tablename:
+      - 'SU_SD_T_PURCHASE_REQUIRE_SECTION_DETAIL_NEW'
+      - 'purchase_require_section_detail_new'
+     key_value:
+      - {'data.requireSectionDetailId': 'RSD_ID20240507112737540'}
+
+  -
+     dbname:
+      - 'dc_20230719'
+     tablename:
+      - 'SU_SD_T_PURCHASE_TECH_PARAMETER'
+      - 'purchase_tech_parameter'
+     key_value:
+      - {'data.obejectTechParameterId': 'OB_TE_PA_ID20240507112739575'}
+
+  -
+     dbname:
+      - 'dc_20230719'
+     tablename:
+      - 'SU_SD_T_PURCHASE_REQUIRE_SUPPLIER_QUAL_NEW'
+      - 'purchase_require_supplier_qual_new'
+     key_value:
+      - {'data.requireSectionSupplierQualId': 'RE_SE_SP_QU_ID20240507112742003'}
+
+  -
+     dbname:
+      - 'dc_20230719'
+     tablename:
+      - 'SU_SD_T_PURCHASE_REQUIRE_CONTRACT_PAYMENT'
+      - 'purchase_require_contract_payment'
+     key_value:
+      - {'data.ecoId': 'ECO_ID20240507112742829'}
+
+  -
+     dbname:
+      - 'dc_20230719'
+     tablename:
+      - 'SU_SD_T_PURCHASE_REQUIRE_NOTICE_NEW'
+      - 'purchase_require_notice_new'
+     key_value:
+      - {'data.requireNoticeId': 'RN_ID20240507112743420'}
+
+  -
+     dbname:
+      - 'dc_20230719'
+     tablename:
+      - 'SU_SD_T_PURCHASE_REQUIRE_CHECK_NEW'
+      - 'purchase_require_check_new'
+     key_value:
+      - {'data.requireCheckId': 'RECID20240507112743671'}
+
+  -
+     dbname:
+      - 'dc_20230719'
+     tablename:
+      - 'SU_SD_T_PURCHASE_REQUIRE_SUBMIT_NEW'
+      - 'purchase_require_submit_new'
+     key_value:
+      - {'data.id': 'ID20240507112743887'}
+
+
+

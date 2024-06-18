@@ -1,0 +1,18 @@
+  -
+     dbname:
+      - 'dc_20230719'
+     tablename:
+      - 'SU_SD_T_PURCHASE_REQUIRE_PROJECT_NEW'
+     key_value:
+      - {'data.requireId': 'REID20240415105335028'}
+     sql:
+       - "SELECT * FROM purchase_require_project_new  where REQUIRE_ID LIKE '%REID20240415105335028%'"
+
+  - dbname:
+      - 'dc_20230719'
+    tablename:
+      - 'SU_SD_T_PURCHASE_REQUIRE_COMPILATION_NEW'
+    key_value:
+      - {'data.requireId': 'REID20240415105335028'}
+    sql:
+      - "SELECT * FROM purchase_require_compilation_new WHERE REQUIRE_ID LIKE '%REID20240415105335028%'"
